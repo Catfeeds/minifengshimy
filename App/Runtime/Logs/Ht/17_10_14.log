@@ -1,0 +1,683 @@
+[ 2017-10-14T14:40:06+08:00 ] ::1 /minifengshimianyi/index.php/Ht/Doctor/add.html?id=8&page=0&name=&shop_id=0&tuijian=
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimianyi\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000857s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000922s ]
+NOTIC: [8] Undefined index: type F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\DoctorController.class.php 第 68 行.
+NOTIC: [8] Undefined index: submit F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\DoctorController.class.php 第 70 行.
+SQL: SHOW COLUMNS FROM `lr_doctor_cat` [ RunTime:0.0031s ]
+SQL: SELECT `id`,`name` FROM `lr_doctor_cat` WHERE ( del=0 )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lr_doctor` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `lr_doctor` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: shop_id F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\DoctorController.class.php 第 185 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimianyi\App\Runtime\Cache\Ht\2223f41ac69bcc4f65acac544a0ae8c2.php 第 14 行.
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimianyi\App\Runtime\Cache\Ht\2223f41ac69bcc4f65acac544a0ae8c2.php 第 14 行.
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimianyi\App\Runtime\Cache\Ht\2223f41ac69bcc4f65acac544a0ae8c2.php 第 14 行.
+NOTIC: [2] Division by zero F:\phpStudy\WWW\minifengshimianyi\App\Runtime\Cache\Ht\2223f41ac69bcc4f65acac544a0ae8c2.php 第 14 行.
+NOTIC: [8] Undefined variable: shangchang F:\phpStudy\WWW\minifengshimianyi\App\Runtime\Cache\Ht\2223f41ac69bcc4f65acac544a0ae8c2.php 第 99 行.
+NOTIC: [8] Undefined index: shop_id F:\phpStudy\WWW\minifengshimianyi\App\Runtime\Cache\Ht\2223f41ac69bcc4f65acac544a0ae8c2.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011715s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011763s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000613s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000659s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001232s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001295s ]
+
+[ 2017-10-14T14:40:06+08:00 ] ::1 /minifengshimianyi/index.php/Ht/Doctor/user.html?type=xz
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimianyi\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001088s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001173s ]
+NOTIC: [8] Undefined index: id F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\DoctorController.class.php 第 310 行.
+NOTIC: [8] Undefined index: tel F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\DoctorController.class.php 第 311 行.
+NOTIC: [8] Undefined index: name F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\DoctorController.class.php 第 312 行.
+NOTIC: [8] Undefined index: name F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\DoctorController.class.php 第 314 行.
+SQL: SHOW COLUMNS FROM `lr_user` [ RunTime:0.0032s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lr_user` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: page F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\DoctorController.class.php 第 324 行.
+SQL: SELECT * FROM `lr_user` WHERE ( 1=1 ) ORDER BY id desc LIMIT 0,20000   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011802s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011863s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000660s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000867s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000910s ]
+
+[ 2017-10-14T14:40:13+08:00 ] ::1 /minifengshimianyi/index.php/Ht/Doctor/add.html?id=8&page=0&type=&name=&shop_id=
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimianyi\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000944s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001018s ]
+NOTIC: [8] Undefined index: shop_id F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\DoctorController.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `lr_doctor` [ RunTime:0.0031s ]
+SQL: UPDATE `lr_doctor` SET `name`='LeeFon',`uid`='5',`password`='123456',`hospital`='银河医院',`position`='全能医生',`cztime`='周六',`price`='9',`cid`='2',`sort`='0',`updatetime`='1507963213',`digest`='该医生是一个全能的医生',`zyjy`='毫无经验',`tel`='18845210365',`is_yu`='1',`is_online`='1',`service`='男科、女科',`renqi`='0' WHERE ( id=8 ) [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007714s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007777s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000632s ]
+
+[ 2017-10-14T14:40:15+08:00 ] ::1 /minifengshimianyi/index.php/Ht/Doctor/add.html?id=8&page=0&name=&shop_id=0&tuijian=
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimianyi\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000923s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000990s ]
+NOTIC: [8] Undefined index: type F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\DoctorController.class.php 第 68 行.
+NOTIC: [8] Undefined index: submit F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\DoctorController.class.php 第 70 行.
+SQL: SHOW COLUMNS FROM `lr_doctor_cat` [ RunTime:0.0055s ]
+SQL: SELECT `id`,`name` FROM `lr_doctor_cat` WHERE ( del=0 )  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `lr_doctor` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `lr_doctor` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: shop_id F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\DoctorController.class.php 第 185 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimianyi\App\Runtime\Cache\Ht\2223f41ac69bcc4f65acac544a0ae8c2.php 第 14 行.
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimianyi\App\Runtime\Cache\Ht\2223f41ac69bcc4f65acac544a0ae8c2.php 第 14 行.
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimianyi\App\Runtime\Cache\Ht\2223f41ac69bcc4f65acac544a0ae8c2.php 第 14 行.
+NOTIC: [2] Division by zero F:\phpStudy\WWW\minifengshimianyi\App\Runtime\Cache\Ht\2223f41ac69bcc4f65acac544a0ae8c2.php 第 14 行.
+NOTIC: [8] Undefined variable: shangchang F:\phpStudy\WWW\minifengshimianyi\App\Runtime\Cache\Ht\2223f41ac69bcc4f65acac544a0ae8c2.php 第 99 行.
+NOTIC: [8] Undefined index: shop_id F:\phpStudy\WWW\minifengshimianyi\App\Runtime\Cache\Ht\2223f41ac69bcc4f65acac544a0ae8c2.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012806s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012867s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001255s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001305s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001577s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001695s ]
+
+[ 2017-10-14T14:43:41+08:00 ] ::1 /minifengshimianyi/index.php/Ht/Doctor/add.html?id=8&page=0&name=&shop_id=0&tuijian=
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimianyi\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000907s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000965s ]
+NOTIC: [8] Undefined index: type F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\DoctorController.class.php 第 68 行.
+NOTIC: [8] Undefined index: submit F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\DoctorController.class.php 第 70 行.
+SQL: SHOW COLUMNS FROM `lr_doctor_cat` [ RunTime:0.0033s ]
+SQL: SELECT `id`,`name` FROM `lr_doctor_cat` WHERE ( del=0 )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lr_doctor` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `lr_doctor` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `lr_user` [ RunTime:0.0033s ]
+SQL: SELECT `name` FROM `lr_user` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: shop_id F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\DoctorController.class.php 第 188 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000170s ]
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimianyi\App\Runtime\Cache\Ht\2223f41ac69bcc4f65acac544a0ae8c2.php 第 14 行.
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimianyi\App\Runtime\Cache\Ht\2223f41ac69bcc4f65acac544a0ae8c2.php 第 14 行.
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimianyi\App\Runtime\Cache\Ht\2223f41ac69bcc4f65acac544a0ae8c2.php 第 14 行.
+NOTIC: [2] Division by zero F:\phpStudy\WWW\minifengshimianyi\App\Runtime\Cache\Ht\2223f41ac69bcc4f65acac544a0ae8c2.php 第 14 行.
+NOTIC: [8] Undefined variable: shangchang F:\phpStudy\WWW\minifengshimianyi\App\Runtime\Cache\Ht\2223f41ac69bcc4f65acac544a0ae8c2.php 第 99 行.
+NOTIC: [8] Undefined index: shop_id F:\phpStudy\WWW\minifengshimianyi\App\Runtime\Cache\Ht\2223f41ac69bcc4f65acac544a0ae8c2.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012058s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000774s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001265s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001382s ]
+
+[ 2017-10-14T14:43:50+08:00 ] ::1 /minifengshimianyi/index.php/Ht/Doctor/user.html?type=xz
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimianyi\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001147s ]
+NOTIC: [8] Undefined index: id F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\DoctorController.class.php 第 313 行.
+NOTIC: [8] Undefined index: tel F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\DoctorController.class.php 第 314 行.
+NOTIC: [8] Undefined index: name F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\DoctorController.class.php 第 315 行.
+NOTIC: [8] Undefined index: name F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\DoctorController.class.php 第 317 行.
+SQL: SHOW COLUMNS FROM `lr_user` [ RunTime:0.0032s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lr_user` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: page F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\DoctorController.class.php 第 327 行.
+SQL: SELECT * FROM `lr_user` WHERE ( 1=1 ) ORDER BY id desc LIMIT 0,20000   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011817s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011880s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000691s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000768s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000919s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000968s ]
+
+[ 2017-10-14T15:09:00+08:00 ] ::1 /minifengshimianyi/index.php/Ht/User/index.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimianyi\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000636s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000688s ]
+NOTIC: [8] Undefined index: type F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\UserController.class.php 第 11 行.
+NOTIC: [8] Undefined index: id F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\UserController.class.php 第 12 行.
+NOTIC: [8] Undefined index: tel F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\UserController.class.php 第 13 行.
+NOTIC: [8] Undefined index: name F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\UserController.class.php 第 14 行.
+NOTIC: [8] Undefined index: name F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\UserController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `lr_user` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lr_user` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: page F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\UserController.class.php 第 26 行.
+SQL: SELECT * FROM `lr_user` WHERE ( 1=1 ) ORDER BY id desc LIMIT 0,20   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009945s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010022s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000975s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001037s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001374s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001449s ]
+
+[ 2017-10-14T15:11:59+08:00 ] ::1 /minifengshimianyi/index.php/Ht/Doctor/index.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimianyi\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000711s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000765s ]
+NOTIC: [8] Undefined index: id F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\DoctorController.class.php 第 14 行.
+NOTIC: [8] Undefined index: shop_id F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\DoctorController.class.php 第 15 行.
+NOTIC: [8] Undefined index: type F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\DoctorController.class.php 第 18 行.
+NOTIC: [8] Undefined index: tuijian F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\DoctorController.class.php 第 19 行.
+NOTIC: [8] Undefined index: name F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\DoctorController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `lr_doctor` [ RunTime:0.0035s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lr_doctor` WHERE ( 1=1 AND del=0 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: page F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\DoctorController.class.php 第 32 行.
+SQL: SELECT * FROM `lr_doctor` WHERE ( 1=1 AND del=0 ) ORDER BY addtime desc LIMIT 0,20   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010372s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010440s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001077s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001146s ]
+
+[ 2017-10-14T15:12:11+08:00 ] ::1 /minifengshimianyi/index.php/Ht/Doctor/add.html?id=8&page=0&name=&shop_id=0&tuijian=
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimianyi\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000627s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000679s ]
+NOTIC: [8] Undefined index: type F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\DoctorController.class.php 第 68 行.
+NOTIC: [8] Undefined index: submit F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\DoctorController.class.php 第 70 行.
+SQL: SHOW COLUMNS FROM `lr_doctor_cat` [ RunTime:0.0031s ]
+SQL: SELECT `id`,`name` FROM `lr_doctor_cat` WHERE ( del=0 )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lr_doctor` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `lr_doctor` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lr_user` [ RunTime:0.0031s ]
+SQL: SELECT `name` FROM `lr_user` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: shop_id F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\DoctorController.class.php 第 188 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimianyi\App\Runtime\Cache\Ht\2223f41ac69bcc4f65acac544a0ae8c2.php 第 14 行.
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimianyi\App\Runtime\Cache\Ht\2223f41ac69bcc4f65acac544a0ae8c2.php 第 14 行.
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimianyi\App\Runtime\Cache\Ht\2223f41ac69bcc4f65acac544a0ae8c2.php 第 14 行.
+NOTIC: [2] Division by zero F:\phpStudy\WWW\minifengshimianyi\App\Runtime\Cache\Ht\2223f41ac69bcc4f65acac544a0ae8c2.php 第 14 行.
+NOTIC: [8] Undefined variable: shangchang F:\phpStudy\WWW\minifengshimianyi\App\Runtime\Cache\Ht\2223f41ac69bcc4f65acac544a0ae8c2.php 第 99 行.
+NOTIC: [8] Undefined index: shop_id F:\phpStudy\WWW\minifengshimianyi\App\Runtime\Cache\Ht\2223f41ac69bcc4f65acac544a0ae8c2.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010330s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010376s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000527s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001211s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001274s ]
+
+[ 2017-10-14T15:12:13+08:00 ] ::1 /minifengshimianyi/index.php/Ht/Doctor/user.html?type=xz
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimianyi\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001176s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001372s ]
+NOTIC: [8] Undefined index: id F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\DoctorController.class.php 第 313 行.
+NOTIC: [8] Undefined index: tel F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\DoctorController.class.php 第 314 行.
+NOTIC: [8] Undefined index: name F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\DoctorController.class.php 第 315 行.
+NOTIC: [8] Undefined index: name F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\DoctorController.class.php 第 317 行.
+SQL: SHOW COLUMNS FROM `lr_user` [ RunTime:0.0033s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lr_user` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: page F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\DoctorController.class.php 第 327 行.
+SQL: SELECT * FROM `lr_user` WHERE ( 1=1 ) ORDER BY id desc LIMIT 0,20000   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000285s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001041s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013791s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013903s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000422s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000746s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000790s ]
+
+[ 2017-10-14T15:12:19+08:00 ] ::1 /minifengshimianyi/index.php/Ht/Doctor/add.html?id=8&page=0&type=&name=&shop_id=
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimianyi\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001618s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001712s ]
+NOTIC: [8] Undefined index: shop_id F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\DoctorController.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `lr_doctor` [ RunTime:0.0033s ]
+SQL: UPDATE `lr_doctor` SET `name`='LeeFon',`uid`='1',`password`='123456',`hospital`='银河医院',`position`='全能医生',`cztime`='周六',`price`='9',`cid`='2',`sort`='0',`updatetime`='1507965139',`digest`='该医生是一个全能的医生',`zyjy`='毫无经验',`tel`='18845210365',`is_yu`='1',`is_online`='1',`service`='男科、女科',`renqi`='0' WHERE ( id=8 ) [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006163s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006217s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000401s ]
+
+[ 2017-10-14T15:12:20+08:00 ] ::1 /minifengshimianyi/index.php/Ht/Doctor/add.html?id=8&page=0&name=&shop_id=0&tuijian=
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimianyi\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003433s ]
+NOTIC: [8] Undefined index: type F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\DoctorController.class.php 第 68 行.
+NOTIC: [8] Undefined index: submit F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\DoctorController.class.php 第 70 行.
+SQL: SHOW COLUMNS FROM `lr_doctor_cat` [ RunTime:0.0051s ]
+SQL: SELECT `id`,`name` FROM `lr_doctor_cat` WHERE ( del=0 )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lr_doctor` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `lr_doctor` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lr_user` [ RunTime:0.0031s ]
+SQL: SELECT `name` FROM `lr_user` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: shop_id F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\DoctorController.class.php 第 188 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000263s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000347s ]
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimianyi\App\Runtime\Cache\Ht\2223f41ac69bcc4f65acac544a0ae8c2.php 第 14 行.
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimianyi\App\Runtime\Cache\Ht\2223f41ac69bcc4f65acac544a0ae8c2.php 第 14 行.
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimianyi\App\Runtime\Cache\Ht\2223f41ac69bcc4f65acac544a0ae8c2.php 第 14 行.
+NOTIC: [2] Division by zero F:\phpStudy\WWW\minifengshimianyi\App\Runtime\Cache\Ht\2223f41ac69bcc4f65acac544a0ae8c2.php 第 14 行.
+NOTIC: [8] Undefined variable: shangchang F:\phpStudy\WWW\minifengshimianyi\App\Runtime\Cache\Ht\2223f41ac69bcc4f65acac544a0ae8c2.php 第 99 行.
+NOTIC: [8] Undefined index: shop_id F:\phpStudy\WWW\minifengshimianyi\App\Runtime\Cache\Ht\2223f41ac69bcc4f65acac544a0ae8c2.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015184s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015325s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001182s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001563s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002431s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002599s ]
+
+[ 2017-10-14T16:32:05+08:00 ] ::1 /minifengshimianyi/index.php/Ht/Doctor/user.html?type=xz
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimianyi\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000138s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001127s ]
+NOTIC: [8] Undefined index: id F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\DoctorController.class.php 第 313 行.
+NOTIC: [8] Undefined index: tel F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\DoctorController.class.php 第 314 行.
+NOTIC: [8] Undefined index: name F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\DoctorController.class.php 第 315 行.
+NOTIC: [8] Undefined index: name F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\DoctorController.class.php 第 317 行.
+SQL: SHOW COLUMNS FROM `lr_user` [ RunTime:0.0029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lr_user` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: page F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\DoctorController.class.php 第 327 行.
+SQL: SELECT * FROM `lr_user` WHERE ( 1=1 ) ORDER BY id desc LIMIT 0,20000   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010935s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011015s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000784s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000838s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000964s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001023s ]
+
+[ 2017-10-14T16:32:09+08:00 ] ::1 /minifengshimianyi/index.php/Ht/Doctor/add.html?id=8&page=0&type=&name=&shop_id=
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimianyi\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000817s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000870s ]
+NOTIC: [8] Undefined index: shop_id F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\DoctorController.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `lr_doctor` [ RunTime:0.0028s ]
+SQL: UPDATE `lr_doctor` SET `name`='LeeFon',`uid`='6',`password`='123456',`hospital`='银河医院',`position`='全能医生',`cztime`='周六',`price`='9',`cid`='2',`sort`='0',`updatetime`='1507969929',`digest`='该医生是一个全能的医生',`zyjy`='毫无经验',`tel`='18845210365',`is_yu`='1',`is_online`='1',`service`='男科、女科',`renqi`='0' WHERE ( id=8 ) [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007225s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007280s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000596s ]
+
+[ 2017-10-14T16:32:10+08:00 ] ::1 /minifengshimianyi/index.php/Ht/Doctor/add.html?id=8&page=0&name=&shop_id=0&tuijian=
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimianyi\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003170s ]
+NOTIC: [8] Undefined index: type F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\DoctorController.class.php 第 68 行.
+NOTIC: [8] Undefined index: submit F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\DoctorController.class.php 第 70 行.
+SQL: SHOW COLUMNS FROM `lr_doctor_cat` [ RunTime:0.0042s ]
+SQL: SELECT `id`,`name` FROM `lr_doctor_cat` WHERE ( del=0 )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `lr_doctor` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `lr_doctor` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `lr_user` [ RunTime:0.0035s ]
+SQL: SELECT `name` FROM `lr_user` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: shop_id F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\DoctorController.class.php 第 188 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimianyi\App\Runtime\Cache\Ht\2223f41ac69bcc4f65acac544a0ae8c2.php 第 14 行.
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimianyi\App\Runtime\Cache\Ht\2223f41ac69bcc4f65acac544a0ae8c2.php 第 14 行.
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimianyi\App\Runtime\Cache\Ht\2223f41ac69bcc4f65acac544a0ae8c2.php 第 14 行.
+NOTIC: [2] Division by zero F:\phpStudy\WWW\minifengshimianyi\App\Runtime\Cache\Ht\2223f41ac69bcc4f65acac544a0ae8c2.php 第 14 行.
+NOTIC: [8] Undefined variable: shangchang F:\phpStudy\WWW\minifengshimianyi\App\Runtime\Cache\Ht\2223f41ac69bcc4f65acac544a0ae8c2.php 第 99 行.
+NOTIC: [8] Undefined index: shop_id F:\phpStudy\WWW\minifengshimianyi\App\Runtime\Cache\Ht\2223f41ac69bcc4f65acac544a0ae8c2.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022854s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022915s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000794s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000842s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004112s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004180s ]
+
+[ 2017-10-14T16:32:20+08:00 ] ::1 /minifengshimianyi/index.php/Ht/Doctor/user.html?type=xz
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimianyi\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002150s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002233s ]
+NOTIC: [8] Undefined index: id F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\DoctorController.class.php 第 313 行.
+NOTIC: [8] Undefined index: tel F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\DoctorController.class.php 第 314 行.
+NOTIC: [8] Undefined index: name F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\DoctorController.class.php 第 315 行.
+NOTIC: [8] Undefined index: name F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\DoctorController.class.php 第 317 行.
+SQL: SHOW COLUMNS FROM `lr_user` [ RunTime:0.0033s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lr_user` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: page F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\DoctorController.class.php 第 327 行.
+SQL: SELECT * FROM `lr_user` WHERE ( 1=1 ) ORDER BY id desc LIMIT 0,20000   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012208s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012270s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000750s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000802s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001086s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001149s ]
+
+[ 2017-10-14T16:32:29+08:00 ] ::1 /minifengshimianyi/index.php/Ht/Doctor/add.html?id=8&page=0&type=&name=&shop_id=
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimianyi\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000881s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000945s ]
+NOTIC: [8] Undefined index: shop_id F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\DoctorController.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `lr_doctor` [ RunTime:0.0029s ]
+SQL: UPDATE `lr_doctor` SET `name`='LeeFon',`uid`='1',`password`='123456',`hospital`='银河医院',`position`='全能医生',`cztime`='周六',`price`='9',`cid`='2',`sort`='0',`updatetime`='1507969949',`digest`='该医生是一个全能的医生',`zyjy`='毫无经验',`tel`='18845210365',`is_yu`='1',`is_online`='1',`service`='男科、女科',`renqi`='0' WHERE ( id=8 ) [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007934s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007988s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000588s ]
+
+[ 2017-10-14T16:32:30+08:00 ] ::1 /minifengshimianyi/index.php/Ht/Doctor/add.html?id=8&page=0&name=&shop_id=0&tuijian=
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimianyi\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003411s ]
+NOTIC: [8] Undefined index: type F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\DoctorController.class.php 第 68 行.
+NOTIC: [8] Undefined index: submit F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\DoctorController.class.php 第 70 行.
+SQL: SHOW COLUMNS FROM `lr_doctor_cat` [ RunTime:0.0041s ]
+SQL: SELECT `id`,`name` FROM `lr_doctor_cat` WHERE ( del=0 )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lr_doctor` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `lr_doctor` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `lr_user` [ RunTime:0.0039s ]
+SQL: SELECT `name` FROM `lr_user` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0012s ]
+NOTIC: [8] Undefined variable: shop_id F:\phpStudy\WWW\minifengshimianyi\App\Ht\Controller\DoctorController.class.php 第 188 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000312s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000465s ]
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimianyi\App\Runtime\Cache\Ht\2223f41ac69bcc4f65acac544a0ae8c2.php 第 14 行.
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimianyi\App\Runtime\Cache\Ht\2223f41ac69bcc4f65acac544a0ae8c2.php 第 14 行.
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimianyi\App\Runtime\Cache\Ht\2223f41ac69bcc4f65acac544a0ae8c2.php 第 14 行.
+NOTIC: [2] Division by zero F:\phpStudy\WWW\minifengshimianyi\App\Runtime\Cache\Ht\2223f41ac69bcc4f65acac544a0ae8c2.php 第 14 行.
+NOTIC: [8] Undefined variable: shangchang F:\phpStudy\WWW\minifengshimianyi\App\Runtime\Cache\Ht\2223f41ac69bcc4f65acac544a0ae8c2.php 第 99 行.
+NOTIC: [8] Undefined index: shop_id F:\phpStudy\WWW\minifengshimianyi\App\Runtime\Cache\Ht\2223f41ac69bcc4f65acac544a0ae8c2.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022817s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022912s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000772s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000821s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002533s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002672s ]
+
+[ 2017-10-14T16:49:33+08:00 ] ::1 /minifengshimy/index.php/Ht/Index/index.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimy\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001527s ]
+SQL: SHOW COLUMNS FROM `lr_web` [ RunTime:0.0033s ]
+SQL: SELECT `concent` FROM `lr_web` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000592s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000662s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.113022s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.113096s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000824s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000868s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001268s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001354s ]
+
+[ 2017-10-14T16:49:34+08:00 ] ::1 /minifengshimy/index.php/Ht/Page/adminindex.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimy\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001156s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001228s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012761s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012857s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000666s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001882s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002085s ]
+
+[ 2017-10-14T16:49:38+08:00 ] ::1 /minifengshimy/index.php/Ht/Guanggao/index.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimy\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000841s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000895s ]
+SQL: SHOW COLUMNS FROM `lr_guanggao` [ RunTime:0.0204s ]
+NOTIC: [8] Undefined index: adv_name F:\phpStudy\WWW\minifengshimy\App\Ht\Controller\GuanggaoController.class.php 第 20 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lr_guanggao` LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `lr_guanggao` ORDER BY addtime desc LIMIT 0,20   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+NOTIC: [8] Undefined variable: name F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\3cd5e92d217e736cce65444d1cb1a7ac.php 第 23 行.
+NOTIC: [8] Undefined variable: type F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\3cd5e92d217e736cce65444d1cb1a7ac.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013425s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013484s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000655s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000706s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001222s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001272s ]
+
+[ 2017-10-14T16:49:49+08:00 ] ::1 /minifengshimy/index.php/Ht/Guanggao/add.html?adv_id=3
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimy\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000751s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000806s ]
+SQL: SHOW COLUMNS FROM `lr_guanggao` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `lr_guanggao` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008988s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009062s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000716s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000754s ]
+
+[ 2017-10-14T16:49:54+08:00 ] ::1 /minifengshimy/index.php/Ht/Guanggao/save.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimy\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000940s ]
+SQL: SHOW COLUMNS FROM `lr_guanggao` [ RunTime:0.0027s ]
+NOTIC: [8] Undefined index: validate F:\phpStudy\WWW\minifengshimy\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto F:\phpStudy\WWW\minifengshimy\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `lr_guanggao` SET `name`='首页中部广告',`position`='1',`type`='',`action`='',`photo`='UploadFiles/adv/20170721/1500626868119206.jpg',`sort`='0' WHERE ( id=3 ) [ RunTime:0.0083s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006927s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006984s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000462s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000699s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000738s ]
+
+[ 2017-10-14T16:49:55+08:00 ] ::1 /minifengshimy/index.php/Ht/Guanggao/index
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimy\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001690s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001769s ]
+SQL: SHOW COLUMNS FROM `lr_guanggao` [ RunTime:0.0056s ]
+NOTIC: [8] Undefined index: adv_name F:\phpStudy\WWW\minifengshimy\App\Ht\Controller\GuanggaoController.class.php 第 20 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lr_guanggao` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lr_guanggao` ORDER BY addtime desc LIMIT 0,20   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000213s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000376s ]
+NOTIC: [8] Undefined variable: name F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\3cd5e92d217e736cce65444d1cb1a7ac.php 第 23 行.
+NOTIC: [8] Undefined variable: type F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\3cd5e92d217e736cce65444d1cb1a7ac.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014444s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014494s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000584s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000624s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000785s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000826s ]
+

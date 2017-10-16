@@ -1,0 +1,104 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>后台管理</title>
+<link href="__PUBLIC__/ht/css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="__PUBLIC__/ht/js/jquery.js"></script>
+<script type="text/javascript" src="__PUBLIC__/ht/js/action.js"></script>
+<script type="text/javascript">
+ function openDialog(type){
+		window.open("{:U('Inout/expUser')}?tel={$tel}&name={$name}");
+}
+ </script>
+</head>
+<body>
+
+<div class="aaa_pts_show_1">【 会员管理 】</div>
+
+<div class="aaa_pts_show_2">
+    
+    <div>
+       <div class="aaa_pts_4"><a href="index">会员管理</a></div>
+    </div>
+    <div class="aaa_pts_3">
+      
+      <div class="pro_4 bord_1">
+         <div class="pro_5">账号名：<input type="text" class="inp_1 inp_6" id="name" value="{$name}"></div>
+         <div class="pro_5">手机号码：<input type="text" class="inp_1 inp_6" id="tel" value="{$tel}"></div>
+         <div class="pro_5">真实姓名：<input type="text" class="inp_1 inp_6" id="truename" value="{$truename}"></div>
+         <div class="pro_6"><input type="button" class="aaa_pts_web_3" value="搜 索" style="margin:0;" onclick="product_option(0);"></div>
+      </div>
+
+      <table class="pro_3">
+         <tr class="tr_1">
+           <td style="width:80px;">ID</td>
+           <td style="width:100px;">医生头像</td>
+           <td>会员昵称</td>
+           <td>真实姓名</td>
+           <td>在职医院</td>
+           <td style="width:120px;">联系方式</td>
+           <td style="width:120px;">审核状态</td>
+           <td style="width:180px;">操作</td>
+         </tr>
+         <tbody id="news_option">
+          <!-- 遍历 -->
+            <volist name="userlist" id="v" empty="暂时没有数据">
+              <tr data-id="{$v.id}" data-name="{$v.name}">
+               <td>{$v.id}</td>
+               <td><if condition="$v.img4 neq ''"><img src="__DATA__/{$v.img4}" style="width:70px;height:70px;"><else />未上传</if></td>
+               <td>{$v.name}</td>
+               <td>{$v.truename}</td>
+               <td>{$v.hospital}</td>
+               <td>{$v.tel}</td>
+               <td><if condition="$v.audit eq 2"><label style="color:green;">通过</label><elseif condition="$v.audit eq 3" /><label style="color:red;">未通过</label></if></td>
+               <td class="obj_1">
+                <if condition="$v.audit eq 2">
+                 <a onclick="del_id_urls2({$v.id})">解除认证</a>
+                </if> 
+               </td>
+              </tr>
+            </volist>
+            <!-- 遍历 -->
+         </tbody>
+         <tr>
+            <td colspan="10" class="td_2">
+              {$page_index}
+            </td>
+         </tr>
+      </table>
+    </div>
+    
+</div>
+<script>
+//分页
+function product_option(page){
+  var obj={
+     "name":$("#name").val(),
+     "tel":$("#tel").val(),
+     "truename":$("#truename").val(),
+    }
+  var url='?page='+page;
+  $.each(obj,function(a,b){
+    url+='&'+a+'='+b;
+   });
+  location=url; 
+}
+
+function window_opener(e){
+  var obj=$(e);
+  window.opener.document.getElementById('uid').value=obj.parent().parent().attr('data-id');
+  window.opener.document.getElementById('user_name').value=obj.parent().parent().attr('data-name');
+  
+  window.close();
+}
+
+function del_id_urls2(id){
+   if(confirm('你确定要执行此操作吗？')){
+    location.href='{:U("remove")}?id='+id;
+  }
+}
+</script>
+</body>
+</html>

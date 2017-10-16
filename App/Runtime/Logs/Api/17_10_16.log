@@ -1,0 +1,30 @@
+[ 2017-10-16T08:21:57+08:00 ] ::1 /minifengshimy/index.php/Api/Login/getsessionkey
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimy\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+NOTIC: [8] Undefined variable: sckey F:\phpStudy\WWW\minifengshimy\App\Api\Conf\config.php 第 33 行.
+NOTIC: [8] Undefined variable: sckey F:\phpStudy\WWW\minifengshimy\App\Api\Conf\config.php 第 33 行.
+NOTIC: [8] Undefined variable: sckey F:\phpStudy\WWW\minifengshimy\App\Api\Conf\config.php 第 33 行.
+NOTIC: [8] Use of undefined constant LOAD_EXT_CONFIG - assumed 'LOAD_EXT_CONFIG' F:\phpStudy\WWW\minifengshimy\App\Api\Conf\config.php 第 40 行.
+
+[ 2017-10-16T08:21:58+08:00 ] ::1 /minifengshimy/index.php/Api/Login/authlogin
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimy\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+NOTIC: [8] Undefined variable: sckey F:\phpStudy\WWW\minifengshimy\App\Api\Conf\config.php 第 33 行.
+NOTIC: [8] Undefined variable: sckey F:\phpStudy\WWW\minifengshimy\App\Api\Conf\config.php 第 33 行.
+NOTIC: [8] Undefined variable: sckey F:\phpStudy\WWW\minifengshimy\App\Api\Conf\config.php 第 33 行.
+NOTIC: [8] Use of undefined constant LOAD_EXT_CONFIG - assumed 'LOAD_EXT_CONFIG' F:\phpStudy\WWW\minifengshimy\App\Api\Conf\config.php 第 40 行.
+
+[ 2017-10-16T08:22:01+08:00 ] ::1 /minifengshimy/index.php/Api/Index/index
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimy\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000093s ]
+NOTIC: [8] Undefined variable: sckey F:\phpStudy\WWW\minifengshimy\App\Api\Conf\config.php 第 33 行.
+NOTIC: [8] Undefined variable: sckey F:\phpStudy\WWW\minifengshimy\App\Api\Conf\config.php 第 33 行.
+NOTIC: [8] Undefined variable: sckey F:\phpStudy\WWW\minifengshimy\App\Api\Conf\config.php 第 33 行.
+NOTIC: [8] Use of undefined constant LOAD_EXT_CONFIG - assumed 'LOAD_EXT_CONFIG' F:\phpStudy\WWW\minifengshimy\App\Api\Conf\config.php 第 40 行.
+
