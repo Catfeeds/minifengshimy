@@ -4,12 +4,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>后台管理</title>
-<link href="/minifengshimianyi/Public/ht/css/main.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="/minifengshimianyi/Public/ht/js/jquery.js"></script>
-<script type="text/javascript" src="/minifengshimianyi/Public/ht/js/action.js"></script>
-<script type="text/javascript" src="/minifengshimianyi/Public/plugins/xheditor/xheditor-1.2.1.min.js"></script>
-<script type="text/javascript" src="/minifengshimianyi/Public/plugins/xheditor/xheditor_lang/zh-cn.js"></script>
-<script type="text/javascript" src="/minifengshimianyi/Public/ht/js/jCalendar.js"></script>
+<link href="/minifengshimy/Public/ht/css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/minifengshimy/Public/ht/js/jquery.js"></script>
+<script type="text/javascript" src="/minifengshimy/Public/ht/js/action.js"></script>
+<script type="text/javascript" src="/minifengshimy/Public/plugins/xheditor/xheditor-1.2.1.min.js"></script>
+<script type="text/javascript" src="/minifengshimy/Public/plugins/xheditor/xheditor_lang/zh-cn.js"></script>
+<script type="text/javascript" src="/minifengshimy/Public/ht/js/jCalendar.js"></script>
 <style>
 <?php  $width=round($img['width']*0.6+6); $height =round( $width*$img['height'] / $img['width']); ?>
 .dx1{float:left; margin-left: 17px; margin-bottom:10px; }
@@ -146,10 +146,21 @@
           <div class="d1">头   像:</div>
            <div>
             <?php if ($pro_allinfo['photo_x']) { ?>
-                  <img src="/minifengshimianyi/Data/<?php echo $pro_allinfo['photo_x']; ?>" width="80" height="80" style="margin-bottom: 3px;" />
+                  <img src="/minifengshimy/Data/<?php echo $pro_allinfo['photo_x']; ?>" width="80" height="80" style="margin-bottom: 3px;" />
                   <br />
               <?php } ?>
               <input type="file" name="photo_x" id="photo_x" />
+            </div>
+         </li>
+
+          <li>
+          <div class="d1">二维码:</div>
+           <div>
+            <?php if ($pro_allinfo['erweima']) { ?>
+                  <img src="/minifengshimy/Data/<?php echo $pro_allinfo['erweima']; ?>" width="80" height="80" style="margin-bottom: 3px;" />
+                  <br />
+              <?php } ?>
+              <input type="file" name="erweima" id="erweima" />
             </div>
          </li>
 
@@ -160,7 +171,7 @@
           <div class="d1">执业证:</div>
            <div>
             <?php if ($pro_allinfo['photo_x']) { ?>
-              <img src="/minifengshimianyi/Data/<?php echo $pro_allinfo['photo']; ?>" style="margin-bottom: 3px;" /><br />
+              <img src="/minifengshimy/Data/<?php echo $pro_allinfo['photo']; ?>" style="margin-bottom: 3px;" /><br />
             <?php } ?>
             <input type="file" name="photo" id="photo" />
             </div>
@@ -226,7 +237,7 @@
     </div>
     
 </div>
-<script type="text/javascript" src="/minifengshimianyi/Public/ht/js/product.js"></script>
+<script type="text/javascript" src="/minifengshimy/Public/ht/js/product.js"></script>
 <script>
 function upadd(obj){
   //alert('aaa');

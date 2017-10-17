@@ -118,6 +118,25 @@ class DoctorController extends PublicController{
 				    }
 			}
 
+			//上传二维码
+			if (!empty($_FILES["erweima"]["tmp_name"])) {
+					//文件上传
+					$info = $this->upload_images($_FILES["erweima"],array('jpg','png','jpeg'),"doctor/".date(Ymd));
+				    if(!is_array($info)) {// 上传错误提示错误信息
+				        $this->error($info);
+				        exit();
+				    }else{// 上传成功 获取上传文件信息
+					    $array['erweima'] = 'UploadFiles/'.$info['savepath'].$info['savename'];
+					    $xt = M('doctor')->where('id='.intval($id))->field('erweima')->find();
+					    if ($id && $xt['erweima']) {
+					    	$img_url = "Data/".$xt['erweima'];
+							if(file_exists($img_url)) {
+								@unlink($img_url);
+							}
+					    }
+				    }
+			}
+
 			if (!empty($_FILES["photo"]["tmp_name"])) {
 					//文件上传
 					$info = $this->upload_images($_FILES["photo"],array('jpg','png','jpeg'),"doctor/".date(Ymd));

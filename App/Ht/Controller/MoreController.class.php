@@ -36,7 +36,7 @@ class MoreController extends PublicController{
 		if(IS_POST){
 			if(intval($_POST['id'])){
 				$data = array();
-				$data['concent'] = $_POST['concent'];
+				$data['concent'] = $_POST['content'];
 				$data['sort'] = intval($_POST['sort']);
 				$data['addtime'] = time();
 				$up = M('web')->where('id='.intval($_POST['id']))->save($data);

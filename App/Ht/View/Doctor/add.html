@@ -158,6 +158,17 @@ $height =round( $width*$img['height'] / $img['width']);
             </div>
          </li>
 
+          <li>
+          <div class="d1">二维码:</div>
+           <div>
+            <?php if ($pro_allinfo['erweima']) { ?>
+                  <img src="__DATA__/<?php echo $pro_allinfo['erweima']; ?>" width="80" height="80" style="margin-bottom: 3px;" />
+                  <br />
+              <?php } ?>
+              <input type="file" name="erweima" id="erweima" />
+            </div>
+         </li>
+
         <li>
           <div style="color:#c00; font-size:14px; padding-left:20px;">上传医师执业证&nbsp;&nbsp;&nbsp;只能添加一张图片！！</div>
         </li>

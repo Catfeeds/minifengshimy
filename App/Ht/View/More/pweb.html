@@ -30,7 +30,7 @@
          <li>
             <div class="d1">内容介绍:</div>
             <div>
-              <textarea class="inp_1 inp_2" name="concent" id="concent"/>{$datas['concent']}</textarea>
+              <textarea class="inp_1 inp_2" name="content" id="content"/>{$datas['concent']}</textarea>
             </div>
          </li>
          <li>
@@ -56,9 +56,9 @@
 </div>
 <script>
 //初始化编辑器
-$('#concent').xheditor({
-	skin:'nostyle', 
-	upImgUrl:'__FUNC__/inc/upload.php'
+$('#content').xheditor({
+  skin:'nostyle' ,
+  upImgUrl:'{:U("Upload/xheditor")}'
 });
 </script>
 </body>

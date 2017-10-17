@@ -34,6 +34,7 @@ class DoctorController extends PublicController {
 
 		$pro['photo_x'] = __DATAURL__.$pro['photo_x'];
 		$pro['addtime'] = date("Y-m-d",$pro['addtime']);
+        $pro['cname'] = M('doctor_cat')->where('id='.intval($pro['cid']))->getField('name');
 		$up = array();
 		$up['renqi'] = intval($pro['renqi'])+1;
 		M('doctor')->where('id='.intval($pro_id))->save($up);
@@ -63,7 +64,7 @@ class DoctorController extends PublicController {
             $where.=' AND name LIKE "%'.$keyword.'%"';
         }
 
- 		$doctor = M('doctor')->where($where)->order($order)->limit(8)->select();
+ 		$doctor = M('doctor')->where($where)->order($order)->select();
  		$json = array();$json_arr = array();
  		foreach ($doctor as $k => $v) {
  			$json['id'] = $v['id'];
@@ -363,5 +364,125 @@ class DoctorController extends PublicController {
         echo json_encode(array('status'=>1,'list'=>$list,'info'=>$info));
         exit();
     }
+
+    //***************************
+    //  获取商品详情接口
+    //***************************
+    public function detail(){
+        header('Content-type:text/html; Charset=utf8');
+        $uid = intval($_REQUEST['uid']);
+        $docid = M('doctor')->where('uid='.$uid)->getField('id');
+        $pro = M('doctor')->where('id='.intval($docid).' AND del=0')->find();
+        if(!$pro){
+            echo json_encode(array('status'=>0,'err'=>'数据信息异常！'));
+            exit();
+        }
+        // $content = str_replace('/minigzbdrent/Data/', __DATAURL__, $pro['content']);
+        // $content = html_entity_decode($content, ENT_QUOTES , 'utf-8');
+        //计算综合评分
+        $plnum = intval(M('doctor_dp')->where('docid='.intval($docid))->getField('COUNT(id)'));
+        if ($plnum>0) {
+            $plsum = intval(M('doctor_dp')->where('docid='.intval($docid))->getField('SUM(num)'));
+            $pro['grade'] = sprintf('%.1f', ($plsum/$plnum));
+        }else{
+            $pro['grade'] = sprintf('%.1f', 5);
+        }
+
+        $pro['photo_x'] = __DATAURL__.$pro['photo_x'];
+        $pro['erweima'] = __DATAURL__.$pro['erweima'];
+        $pro['addtime'] = date("Y-m-d",$pro['addtime']);
+        $pro['cname'] = M('doctor_cat')->where('id='.intval($pro['cid']))->getField('name');
+        $up = array();
+        $up['renqi'] = intval($pro['renqi'])+1;
+        M('doctor')->where('id='.intval($pro_id))->save($up);
+
+        echo json_encode(array('status'=>1,'info'=>$pro));
+        exit();
+    }
+
+     //***************************
+    //   上传图片
+    //***************************
+    public function uploadimg(){
+        $info = $this->upload_images($_FILES['data'],array('jpg','png','jpeg'),"doctor/".date(Ymd));
+        if(is_array($info)) {// 上传错误提示错误信息
+            $url = 'UploadFiles/'.$info['savepath'].$info['savename'];
+            if ($_REQUEST['imgurl']) {
+                $img_url = "Data/".$_REQUEST['imgurl'];
+                if(file_exists($img_url)) {
+                    @unlink($img_url);
+                }
+            }
+            echo $url;
+            exit();
+        }else{
+            echo json_encode(array('status'=>0,'err'=>$info));
+            exit();
+        }
+    }
+
+    //更新数据库
+    public function saveImg(){
+        $uid = intval($_REQUEST['uid']);
+        if(!$uid){
+            echo json_encode(array('status'=>0,'err'=>'网络异常！'));
+            exit();
+        }
+        $photo_x = $_REQUEST['photo_x'];
+        $data['photo_x'] = $photo_x;
+        $res = M('doctor')->where('uid='.$uid)->save($data);
+        if($res){
+            echo json_encode(array('status'=>1,'err'=>'修改成功！'));
+            exit();
+        }else{
+            echo json_encode(array('status'=>0,'err'=>'修改失败！'));
+            exit();
+        }
+    }
+
+    /*
+    *
+    * 图片上传的公共方法
+    *  $file 文件数据流 $exts 文件类型 $path 子目录名称
+    */
+    public function upload_images($file,$exts,$path){
+        $upload = new \Think\Upload();// 实例化上传类
+        $upload->maxSize   =  2097152 ;// 设置附件上传大小2M
+        $upload->exts      =  $exts;// 设置附件上传类型
+        $upload->rootPath  =  './Data/UploadFiles/'; // 设置附件上传根目录
+        $upload->savePath  =  ''; // 设置附件上传（子）目录
+        $upload->saveName = time().mt_rand(100000,999999); //文件名称创建时间戳+随机数
+        $upload->autoSub  = true; //自动使用子目录保存上传文件 默认为true
+        $upload->subName  = $path; //子目录创建方式，采用数组或者字符串方式定义
+        // 上传文件 
+        $info = $upload->uploadOne($file);
+        if(!$info) {// 上传错误提示错误信息
+            return $upload->getError();
+        }else{// 上传成功 获取上传文件信息
+            //return 'UploadFiles/'.$file['savepath'].$file['savename'];
+            return $info;
+        }
+    }
+
+    //修改医生信息
+    public function update(){
+        $uid = intval($_REQUEST['uid']);
+        if(!$uid){
+            echo json_encode(array('status'=>0,'err'=>'网络异常！'));
+            exit();
+        }
+        $data = array();
+        $data['digest'] = $_REQUEST['digest'];
+        $data['zyjy'] = $_REQUEST['zyjy'];
+        $res = M('doctor')->where('uid='.$uid)->save($data);
+        if($res){
+            echo json_encode(array('status'=>1,'err'=>'保存成功！'));
+            exit();
+        }else{
+            echo json_encode(array('status'=>0,'err'=>'保存成功！'));
+            exit();
+        }
+    }
+
 
 }

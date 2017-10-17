@@ -4,9 +4,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>后台管理</title>
-<link href="/minifengshimianyi/Public/ht/css/main.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="/minifengshimianyi/Public/ht/js/jquery.js"></script>
-<script type="text/javascript" src="/minifengshimianyi/Public/ht/js/action.js"></script>
+<link href="/minifengshimy/Public/ht/css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/minifengshimy/Public/ht/js/jquery.js"></script>
+<script type="text/javascript" src="/minifengshimy/Public/ht/js/action.js"></script>
 </head>
 <body>
 
@@ -40,7 +40,7 @@
          <!-- 遍历 -->
           <?php if(is_array($productlist)): $i = 0; $__LIST__ = $productlist;if( count($__LIST__)==0 ) : echo "暂时没有数据" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><tr>
              <td><?php echo ($v["id"]); ?></td>
-             <td style="padding:3px 0;"><img src="/minifengshimianyi/Data/<?php echo ($v["photo_x"]); ?>" width="70px" height="70px"/></td>
+             <td style="padding:3px 0;"><img src="/minifengshimy/Data/<?php echo ($v["photo_x"]); ?>" width="70px" height="70px"/></td>
              <td><?php echo ($v["name"]); ?></td>
              <td><?php echo ($v["hospital"]); ?></td>
              <td><?php echo ($v["position"]); ?></td>

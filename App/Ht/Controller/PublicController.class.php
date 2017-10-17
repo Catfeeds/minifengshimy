@@ -153,7 +153,7 @@ class PublicController extends Controller{
 	*/
 	public function upload_images($file,$exts,$path){
 		$upload = new \Think\Upload();// 实例化上传类
-		$upload->maxSize   =  2097152 ;// 设置附件上传大小2M
+		$upload->maxSize   =  52428800 ;// 设置附件上传大小2M
 		$upload->exts      =  $exts;// 设置附件上传类型
 		$upload->rootPath  =  './Data/UploadFiles/'; // 设置附件上传根目录
 		$upload->savePath  =  ''; // 设置附件上传（子）目录

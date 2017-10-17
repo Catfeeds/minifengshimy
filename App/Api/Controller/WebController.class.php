@@ -8,7 +8,7 @@ class WebController extends PublicController {
     public function web(){
     	$web_id = intval($_REQUEST['web_id']);
     	$content = M('web')->where('id='.intval($web_id))->getField('concent');
-        $content = str_replace('/minifengshimianyi/Data/', __DATAURL__, $content);
+        $content = str_replace('/minifengshimy/Data/', __DATAURL__, $content);
     	$content = html_entity_decode($content, ENT_QUOTES, "utf-8");
 		echo urldecode(json_encode(array('status'=>1,'content'=>$content)));
         exit();
@@ -33,13 +33,14 @@ class WebController extends PublicController {
         $data = array();
         $data['uid'] = $uid;
         $data['content'] = $content;
+        $data['phone'] = $_REQUEST['phone'];
         $data['addtime'] = time();
         $res = M('fankui')->add($data);
         if ($res) {
-            echo json_encode(array('status'=>1));
+            echo json_encode(array('status'=>1,'err'=>'提交成功！'));
             exit();
         }else{
-            echo json_encode(array('status'=>0,'err'=>'保存失败！'));
+            echo json_encode(array('status'=>0,'err'=>'提交失败！'));
             exit();
         }
     }
@@ -50,5 +51,14 @@ class WebController extends PublicController {
     public function getconfig(){
         $config = M('program')->where('id=1')->find();
         echo json_encode(array('status'=>1,'config'=>$config));
+    }
+
+    //关于我们
+    public function aboutUs(){
+        $content = M('web')->where('id=1')->getField('concent');
+        $content = str_replace(C('content.dir'), __DATAURL__ , $content);
+        $content = html_entity_decode($content, ENT_QUOTES ,'utf-8');
+        echo json_encode(array('status'=>1,'content'=>$content));
+        exit();
     }
 }
