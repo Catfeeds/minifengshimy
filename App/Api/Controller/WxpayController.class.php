@@ -121,8 +121,8 @@ class WxpayController extends Controller{
 
 		$up = array();
 		$up['type'] = $pay_type;
-		$up['price_h'] = sprintf("%.2f",floatval($total_fee/100));
-		$up['status'] = 20;
+		$up['price'] = sprintf("%.2f",floatval($total_fee/100));
+		$up['status'] = 40;
 		$up['trade_no'] = $trade_no;
 		$res = M('order')->where('order_sn="'.$order_sn.'"')->save($up);
 		if ($res) {

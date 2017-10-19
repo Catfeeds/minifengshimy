@@ -20,7 +20,7 @@
    </ul>
 </div>
 
-<div class="aaa_pts_left_1" onclick="left_open(this,'auser')">医生认证审核</div>
+<!-- <div class="aaa_pts_left_1" onclick="left_open(this,'auser')">医生认证审核</div>
 <div class="aaa_pts_left_3" style="display:none;" id="auser">
    <ul class="aaa_pts_left_2">
      <li><a href="{:U('User/audit')}" target="iframe">认证审核管理</a></li>
@@ -28,9 +28,9 @@
    <ul class="aaa_pts_left_2">
      <li><a href="{:U('User/audited')}" target="iframe">已审核管理</a></li>
    </ul>
-</div>
+</div> -->
 
-<div class="aaa_pts_left_1" onclick="left_open(this,'hospital')">医院管理</div>
+<!-- <div class="aaa_pts_left_1" onclick="left_open(this,'hospital')">医院管理</div>
 <div class="aaa_pts_left_3" style="display:none;" id="hospital">
  <ul class="aaa_pts_left_2">
   <li>
@@ -46,7 +46,7 @@
       <a href="{:U('Hospital/index')}" target="iframe">医院管理</a>
    </li>
  </ul>
-</div>
+</div> -->
 
 <div class="aaa_pts_left_1" onclick="left_open(this,'doctor')">医生管理</div>
 <div class="aaa_pts_left_3" style="display:none;" id="doctor">
@@ -105,6 +105,28 @@
    </li>
    <li>
        <a href="{:U('Medical/add')}" target="iframe">添加医学百科</a>
+   </li>
+ </ul>
+</div>
+
+<div class="aaa_pts_left_1" onclick="left_open(this,'buliang')">不良事件类型管理</div>
+<div class="aaa_pts_left_3" style="display:none;" id="buliang">
+ <ul class="aaa_pts_left_2">
+   
+   <li>
+       <a href="{:U('Event/index')}" target="iframe">类型管理</a>
+   </li>
+   <li>
+       <a href="{:U('Event/add')}" target="iframe">添加类型</a>
+   </li>
+ </ul>
+</div>
+
+<div class="aaa_pts_left_1" onclick="left_open(this,'tixian')">提现管理</div>
+<div class="aaa_pts_left_3" style="display:none;" id="tixian">
+ <ul class="aaa_pts_left_2">  
+   <li>
+       <a href="{:U('Tixian/index')}" target="iframe">提现管理</a>
    </li>
  </ul>
 </div>

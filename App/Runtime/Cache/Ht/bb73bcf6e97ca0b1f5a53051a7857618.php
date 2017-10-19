@@ -24,7 +24,7 @@
     <div class="aaa_pts_3">
       <form name='form' action="<?php echo U('index');?>" method='get'>
       <div class="pro_4 bord_1">
-         <div class="pro_5">
+        <!--  <div class="pro_5">
                订单状态：
                <select class="inp_1 inp_6" name="pay_status" id="status">
 			      <option value="">全部状态</option>
@@ -32,7 +32,7 @@
 			      	<option value="<?php echo $key; ?>" <?php if ($pay_status==$key) { ?>selected="selected"<?php } ?> ><?php echo $val; ?></option>
 			      <?php } ?>
 	           </select>
-         </div>
+         </div> -->
          
         <div class="pro_5">
           咨询时间：
@@ -47,8 +47,8 @@
            <td style="width:90px;">ID</td>
            <td>咨询患者</td>
            <td>接诊医生</td>       
-           <td>支付类型</td>
-           <td>支付金额</td>
+           <!-- <td>支付类型</td> -->
+           <td>支付金额（元）</td>
            <td style="width:150px;">状态</td>
            <td style="width:180px;">时间</td>
            <td style="width:180px;">操作</td>
@@ -57,17 +57,16 @@
 		      <td><?php echo ($order["id"]); ?></td>
           <td><?php echo ($order["u_name"]); ?></td>
           <td><?php echo ($order["dname"]); ?></td>
-		      <td><?php if($order["type"] == 'alipay'): ?>支付宝<?php elseif($order["type"] == 'weixin'): ?>微信支付<?php else: ?>现金支付<?php endif; ?></td>
-          <td><?php echo ($order["amount"]); ?></td>
+		     <!--  <td><?php if($order["type"] == 'alipay'): ?>支付宝<?php elseif($order["type"] == 'weixin'): ?>微信支付<?php else: ?>现金支付<?php endif; ?></td> -->
+          <td><?php echo ($order["price"]); ?></td>
 		      <td class="status">
-    		   <?php if($order["back"] == 1): ?><font style="color:red">申请退款</font>
-    		   <?php elseif($order["back"] == 2): ?><font style="color:#900">已退款</font>
-    		   <?php else: ?>
-    			 <font class='font_color'><?php echo $order_status[$order['status']]; ?></font><?php endif; ?>
+          <?php if($order["status"] == 10): ?><font class='font_color'>未付款</font>
+           <?php else: ?>
+           <font class='font_color'>已付款</font><?php endif; ?>
     		  </td>
         <td><?php echo (date('Y-m-d H:i',$order["addtime"])); ?></td>
 		   <td>
-		      <a href="<?php echo U('show');?>?oid=<?php echo ($order["id"]); ?>">查看咨询</a> | 
+		     <!--  <a href="<?php echo U('show');?>?oid=<?php echo ($order["id"]); ?>">查看咨询</a> |  -->
 			  <a onclick="del_id_url(<?php echo ($order["id"]); ?>)">删除</a>
 		   </td>
 	     </tr><?php endforeach; endif; else: echo "" ;endif; ?>

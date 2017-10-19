@@ -200,27 +200,27 @@ $height =round( $width*$img['height'] / $img['width']);
               <input class="inp_1" style="width:150px;" name="tel" id="tel" value="{$pro_allinfo.tel}"/>
             </div>
          </li>
-         <li>
+         <!-- <li>
             <div class="d1">在线预约:</div>
             <div>
                <input type="radio" name="is_yu" value="1" <?php echo $pro_allinfo['is_yu']==1 ? 'checked="checked"' : null?>/> 开通  &nbsp;
                <input type="radio" name="is_yu" value="0" <?php echo $pro_allinfo['is_yu']!=1 ? 'checked="checked"' : null?> /> 关闭
             </div>
-         </li>
-         <li>
+         </li> -->
+        <!--  <li>
             <div class="d1">在线出诊:</div>
             <div>
                <input type="radio" name="is_online" value="1" <?php echo $pro_allinfo['is_online']==1 ? 'checked="checked"' : null?>/> 开通  &nbsp;
                <input type="radio" name="is_online" value="0" <?php echo $pro_allinfo['is_online']!=1 ? 'checked="checked"' : null?> /> 关闭
             </div>
-         </li>
+         </li> -->
          <li>
-            <div class="d1">出诊费用:</div>
+            <div class="d1">咨询费用:</div>
             <div>
               <input class="inp_1" style="width:150px;" name="price" id="price" value="{$pro_allinfo.price}"/>
             </div> &nbsp;&nbsp; 不填表示免费咨询
          </li>
-        <li>
+       <!--  <li>
             <div class="d1">排序:</div>
             <div>
               <input class="inp_1" style="width:150px;" name="sort" id="sort" value="<?php echo (int)$pro_allinfo['sort']; ?>"/> &nbsp;&nbsp;
@@ -231,7 +231,7 @@ $height =round( $width*$img['height'] / $img['width']);
             <div>
               <input class="inp_1" style="width:150px;" name="renqi" id="renqi" value="<?php echo (int)$pro_allinfo['renqi']; ?>"/>
             </div>
-         </li>
+         </li> -->
 
       <li><input type="submit" name="submit" value="提交" class="aaa_pts_web_3" border="0" id="aaa_pts_web_s">
           <input type="hidden" name="pro_id" id='pro_id' value="{$pro_allinfo.id}">

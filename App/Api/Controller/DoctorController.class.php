@@ -484,5 +484,44 @@ class DoctorController extends PublicController {
         }
     }
 
+    //提现
+    public function tixian(){
+        $uid = intval($_REQUEST['uid']);
+        if(!$uid){
+            echo json_encode(array('status'=>0,'err'=>'网络异常！'));
+            exit();
+        }
+        $temp_total = M('doctor')->where('uid='.$uid)->getField('total');
+        if(floatval($temp_total) < floatval($_REQUEST['total'])){
+            echo json_encode(array('status'=>0,'err'=>'提现金额不能大于剩余金额！'));
+            exit();
+        }
+        $type = intval($_REQUEST['ttype']);
+        $data = array();
+        $data['uid'] = $uid;
+        $data['total'] = floatval($_REQUEST['total']);
+        $data['addtime'] = time();
+        if($type == 1){
+            $data['bankname'] = $_REQUEST['bankname'];
+            $data['bankCart'] = $_REQUEST['bankCart'];
+            $data['type'] = $type;
+        }else if($type == 2){
+            $data['type'] = $type;
+            $data['zhanghao'] = $_REQUEST['zhanghao'];
+        }else{
+            echo json_encode(array('status'=>0,'err'=>'信息有误！'));
+            exit();
+        }
+        $res = M('tixian')->add($data);
+        if($res){
+            $temp['total'] = floatval($temp_total) - floatval($_REQUEST['total']);
+            M('doctor')->where('uid='.$uid)->save($temp);
+            echo json_encode(array('status'=>1,'err'=>'提现成功！'));
+            exit();
+        }else{
+            echo json_encode(array('status'=>0,'err'=>'提现失败！'));
+            exit();
+        }
+    }
 
 }

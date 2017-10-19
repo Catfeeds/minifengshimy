@@ -3,7 +3,12 @@
 namespace Api\Controller;
 use Think\Controller;
 class PaymentController extends PublicController {
-
+	//构造函数
+    public function _initialize(){
+    	//php 判断http还是https
+  //   	$this->http_type = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') || (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https')) ? 'https://' : 'http://';
+		// vendor('WeiXinpay.wxpay');
+	}
 
 	//***************************
 	//  会员立即购买获取数据接口
@@ -282,12 +287,12 @@ class PaymentController extends PublicController {
     // 购物车结算 下订单
     //***********************************
     public function payment(){
-    	$product=M("product");
+    	// $product=M("product");
 		//运费
-		$post = M('post');
+		// $post = M('post');
 		$order=M("order");
 		$order_pro=M("order_product");
-		$shopping=M('shopping_char');
+		// $shopping=M('shopping_char');
 
 		$uid = intval($_REQUEST['uid']);
 		if (!$uid) {
@@ -295,136 +300,138 @@ class PaymentController extends PublicController {
 			exit();
 		}
 
-		$cart_id = trim($_REQUEST['cart_id'],',');
-		if (!$cart_id) {
-			echo json_encode(array('status'=>0,'err'=>'数据异常.'));
-			exit();
-		}
+		// $cart_id = trim($_REQUEST['cart_id'],',');
+		// if (!$cart_id) {
+		// 	echo json_encode(array('status'=>0,'err'=>'数据异常.'));
+		// 	exit();
+		// }
 
 		//生成订单
 		  try {
 		  	$qz=C('DB_PREFIX');//前缀
 
-		  	$cart_id = explode(',', $cart_id);
-			$shop=array();
-			foreach($cart_id as $ke => $vl){
-				$shop[$ke]=$shopping->where(''.$qz.'shopping_char.uid='.intval($uid).' and '.$qz.'shopping_char.id='.$vl)->join('LEFT JOIN __PRODUCT__ ON __PRODUCT__.id=__SHOPPING_CHAR__.pid')->field(''.$qz.'shopping_char.pid,'.$qz.'shopping_char.num,'.$qz.'shopping_char.shop_id,'.$qz.'shopping_char.buff,'.$qz.'shopping_char.price,'.$qz.'product.price_yh')->find();
-				$num+=$shop[$ke]['num'];
-                if($shop[$ke]['buff']!=''){
-			    	$ozprice+=$shop[$ke]['price']*$shop[$ke]['num'];
-			    }else{
-			    	$shop[$ke]['price']=$shop[$ke]['price_yh'];
-			    	$ozprice+=$shop[$ke]['price']*$shop[$ke]['num'];
-			    }
-			}
+		 //  	$cart_id = explode(',', $cart_id);
+			// $shop=array();
+			// foreach($cart_id as $ke => $vl){
+			// 	$shop[$ke]=$shopping->where(''.$qz.'shopping_char.uid='.intval($uid).' and '.$qz.'shopping_char.id='.$vl)->join('LEFT JOIN __PRODUCT__ ON __PRODUCT__.id=__SHOPPING_CHAR__.pid')->field(''.$qz.'shopping_char.pid,'.$qz.'shopping_char.num,'.$qz.'shopping_char.shop_id,'.$qz.'shopping_char.buff,'.$qz.'shopping_char.price,'.$qz.'product.price_yh')->find();
+			// 	$num+=$shop[$ke]['num'];
+   //              if($shop[$ke]['buff']!=''){
+			//     	$ozprice+=$shop[$ke]['price']*$shop[$ke]['num'];
+			//     }else{
+			//     	$shop[$ke]['price']=$shop[$ke]['price_yh'];
+			//     	$ozprice+=$shop[$ke]['price']*$shop[$ke]['num'];
+			//     }
+			// }
 
-			$yunPrice = array();
-			if ($_POST['yunfei']) {
-				$yunPrice = $post->where('id='.intval($_POST['yunfei']))->find();
-			}
+			// $yunPrice = array();
+			// if ($_POST['yunfei']) {
+			// 	$yunPrice = $post->where('id='.intval($_POST['yunfei']))->find();
+			// }
 			
-			$data['shop_id']=$shop[$ke]['shop_id'];
-			$data['uid']=intval($uid);
+			// $data['shop_id']=$shop[$ke]['shop_id'];
+			// $data['uid']=intval($uid);
 
-            if(!empty($yunPrice)){
-                $data['post'] = $yunPrice['id'];
-                $data['price']=floatval($ozprice)+$yunPrice['price'];
-			}else{
-                $data['post'] = 0;
-                $data['price']=floatval($ozprice);
-			}
+   //          if(!empty($yunPrice)){
+   //              $data['post'] = $yunPrice['id'];
+   //              $data['price']=floatval($ozprice)+$yunPrice['price'];
+			// }else{
+   //              $data['post'] = 0;
+   //              $data['price']=floatval($ozprice);
+			// }
 
-			$data['amount'] = $data['price'];
-			$vid = intval($_POST['vid']);
-			if ($vid) {
-				$vouinfo = M('user_voucher')->where('status=1 AND uid='.intval($uid).' AND vid='.intval($vid))->find();
-				$chk = M('order')->where('uid='.intval($uid).' AND vid='.intval($vid).' AND status>0')->find();
-				if (!$vouinfo || $chk) {
-					//throw new \Exception("此优惠券不可用，请选择其他.".__LINE__);
-					echo json_encode(array('status'=>0,'err'=>'此优惠券不可用，请选择其他.'));
-					exit();
-				}
-				if ($vouinfo['end_time']<time()) {
-					//throw new \Exception("优惠券已过期了.".__LINE__);
-					echo json_encode(array('status'=>0,'err'=>"优惠券已过期了.".__LINE__));
-					exit();
-				}
-				if ($vouinfo['start_time']>time()) {
-					//throw new \Exception("优惠券还未生效.".__LINE__);
-					echo json_encode(array('status'=>0,'err'=>"优惠券还未生效.".__LINE__));
-					exit();
-				}
-				$data['vid'] = intval($vid);
-				$data['amount'] = floatval($data['price'])-floatval($vouinfo['amount']);
-			}
-
+			// $data['amount'] = $data['price'];
+			// $vid = intval($_POST['vid']);
+			// if ($vid) {
+			// 	$vouinfo = M('user_voucher')->where('status=1 AND uid='.intval($uid).' AND vid='.intval($vid))->find();
+			// 	$chk = M('order')->where('uid='.intval($uid).' AND vid='.intval($vid).' AND status>0')->find();
+			// 	if (!$vouinfo || $chk) {
+			// 		//throw new \Exception("此优惠券不可用，请选择其他.".__LINE__);
+			// 		echo json_encode(array('status'=>0,'err'=>'此优惠券不可用，请选择其他.'));
+			// 		exit();
+			// 	}
+			// 	if ($vouinfo['end_time']<time()) {
+			// 		//throw new \Exception("优惠券已过期了.".__LINE__);
+			// 		echo json_encode(array('status'=>0,'err'=>"优惠券已过期了.".__LINE__));
+			// 		exit();
+			// 	}
+			// 	if ($vouinfo['start_time']>time()) {
+			// 		//throw new \Exception("优惠券还未生效.".__LINE__);
+			// 		echo json_encode(array('status'=>0,'err'=>"优惠券还未生效.".__LINE__));
+			// 		exit();
+			// 	}
+			// 	$data['vid'] = intval($vid);
+			// 	$data['amount'] = floatval($data['price'])-floatval($vouinfo['amount']);
+			// }
+		  	$data['uid'] = $uid;
+		  	$data['price'] = $_REQUEST['price'];
 			$data['addtime']=time();
 			$data['del']=0;
-			$data['type']=$_POST['type'];
+			// $data['type']=$_POST['type'];
 			$data['status']=10;
+			$data['docid']=intval($_REQUEST['docid']);
 
-			$adds_id = intval($_POST['aid']);
-			if (!$adds_id) {
-				throw new \Exception("请选择收货地址.".__LINE__);
-			}
-			$adds_info = M('address')->where('id='.intval($adds_id))->find();
-			$data['receiver']=$adds_info['name'];
-			$data['tel']=$adds_info['tel'];
-			$data['address_xq']=$adds_info['address_xq'];
-			$data['code']=$adds_info['code'];
-			$data['product_num']=$num;
-			$data['remark']=$_REQUEST['remark'];
+			// $adds_id = intval($_POST['aid']);
+			// if (!$adds_id) {
+			// 	throw new \Exception("请选择收货地址.".__LINE__);
+			// }
+			// $adds_info = M('address')->where('id='.intval($adds_id))->find();
+			// $data['receiver']=$adds_info['name'];
+			// $data['tel']=$adds_info['tel'];
+			// $data['address_xq']=$adds_info['address_xq'];
+			// $data['code']=$adds_info['code'];
+			// $data['product_num']=$num;
+			// $data['remark']=$_REQUEST['remark'];
 			$data['order_sn']=$this->build_order_no();//生成唯一订单号
 
 			$result = $order->add($data);
-		    if($result){
-	            //$prid = explode(",", $_POST['ids']);
-			    foreach($cart_id as $key => $var){
-					$shops[$key]=$shopping->where(''.$qz.'shopping_char.uid='.intval($uid).' and '.$qz.'shopping_char.id='.intval($var))->join('LEFT JOIN __PRODUCT__ ON __PRODUCT__.id=__SHOPPING_CHAR__.pid')->field(''.$qz.'shopping_char.pid,'.$qz.'shopping_char.num,'.$qz.'shopping_char.shop_id,'.$qz.'shopping_char.buff,'.$qz.'shopping_char.price,'.$qz.'product.name,'.$qz.'product.photo_x,'.$qz.'product.price_yh,'.$qz.'product.num as pnum')->find();
-				    if($shops[$key]['buff']=='' || !$shops[$key]['buff']){
-				    	$shops[$key]['price']=$shops[$key]['price_yh'];
-				    }
+		 //    if($result){
+	  //           //$prid = explode(",", $_POST['ids']);
+			//     foreach($cart_id as $key => $var){
+			// 		$shops[$key]=$shopping->where(''.$qz.'shopping_char.uid='.intval($uid).' and '.$qz.'shopping_char.id='.intval($var))->join('LEFT JOIN __PRODUCT__ ON __PRODUCT__.id=__SHOPPING_CHAR__.pid')->field(''.$qz.'shopping_char.pid,'.$qz.'shopping_char.num,'.$qz.'shopping_char.shop_id,'.$qz.'shopping_char.buff,'.$qz.'shopping_char.price,'.$qz.'product.name,'.$qz.'product.photo_x,'.$qz.'product.price_yh,'.$qz.'product.num as pnum')->find();
+			// 	    if($shops[$key]['buff']=='' || !$shops[$key]['buff']){
+			// 	    	$shops[$key]['price']=$shops[$key]['price_yh'];
+			// 	    }
 
-			        $buff_text='';
-					if($shops[$key]['buff']){
-					   //验证属性
-						$buff = explode(',',$shops[$key]['buff']);
-						if(is_array($buff)){
-							foreach($buff as $keys => $val){
-								$ggid=M("guige")->where('id='.intval($val))->getField('name');
-								$buff_text .= $ggid.' ';
-							};
-						}
-					}
+			//         $buff_text='';
+			// 		if($shops[$key]['buff']){
+			// 		   //验证属性
+			// 			$buff = explode(',',$shops[$key]['buff']);
+			// 			if(is_array($buff)){
+			// 				foreach($buff as $keys => $val){
+			// 					$ggid=M("guige")->where('id='.intval($val))->getField('name');
+			// 					$buff_text .= $ggid.' ';
+			// 				};
+			// 			}
+			// 		}
 
-					$date = array();
-			        $date['pid']=$shops[$key]['pid'];
-					$date['name']=$shops[$key]['name'];
-			        $date['order_id']=$result;
-					$date['price']=$shops[$key]['price'];
-					$date['photo_x']=$shops[$key]['photo_x'];
-					$date['pro_buff']=trim($buff_text,' ');
-					$date['addtime']=time();
-					$date['num']=$shops[$key]['num'];
-					$date['pro_guige']='';
-					$res = $order_pro->add($date);
-					if (!$res) {
-						throw new \Exception("下单 失败！".__LINE__);
-					}
-					//检查产品是否存在，并修改库存
-					$check_pro = $product->where('id='.intval($date['pid']).' AND del=0 AND is_down=0')->field('num,shiyong')->find();
-					$up = array();
-					$up['num'] = intval($check_pro['num'])-intval($date['num']);
-					$up['shiyong'] = intval($check_pro['shiyong'])+intval($date['num']);
-					$product->where('id='.intval($date['pid']))->save($up);
-	            	//echo  $product->getLastSql();
-	            	//删除购物车数据
-	            	$shopping->where('uid='.intval($uid).' AND id='.intval($var))->delete();
+			// 		$date = array();
+			//         $date['pid']=$shops[$key]['pid'];
+			// 		$date['name']=$shops[$key]['name'];
+			//         $date['order_id']=$result;
+			// 		$date['price']=$shops[$key]['price'];
+			// 		$date['photo_x']=$shops[$key]['photo_x'];
+			// 		$date['pro_buff']=trim($buff_text,' ');
+			// 		$date['addtime']=time();
+			// 		$date['num']=$shops[$key]['num'];
+			// 		$date['pro_guige']='';
+			// 		$res = $order_pro->add($date);
+			// 		if (!$res) {
+			// 			throw new \Exception("下单 失败！".__LINE__);
+			// 		}
+			// 		//检查产品是否存在，并修改库存
+			// 		$check_pro = $product->where('id='.intval($date['pid']).' AND del=0 AND is_down=0')->field('num,shiyong')->find();
+			// 		$up = array();
+			// 		$up['num'] = intval($check_pro['num'])-intval($date['num']);
+			// 		$up['shiyong'] = intval($check_pro['shiyong'])+intval($date['num']);
+			// 		$product->where('id='.intval($date['pid']))->save($up);
+	  //           	//echo  $product->getLastSql();
+	  //           	//删除购物车数据
+	  //           	$shopping->where('uid='.intval($uid).' AND id='.intval($var))->delete();
 					
-				}
-			}else{
-				throw new \Exception("下单 失败！");
-			}
+			// 	}
+			// }else{
+			// 	throw new \Exception("下单 失败！");
+			// }
 		  } catch (Exception $e) {
 		  	echo json_encode(array('status'=>0,'err'=>$e->getMessage()));
 		  	exit();
@@ -434,7 +441,7 @@ class PaymentController extends PublicController {
 			$arr = array();
 			$arr['order_id'] = $result;
 			$arr['order_sn'] = $data['order_sn'];
-			$arr['pay_type'] = $_POST['type'];
+			// $arr['pay_type'] = $_POST['type'];
 			echo json_encode(array('status'=>1,'arr'=>$arr));
 			exit();	
     }
@@ -487,4 +494,129 @@ class PaymentController extends PublicController {
 	public function build_order_no(){
 		return date('Ymd').substr(implode(NULL, array_map('ord', str_split(substr(uniqid(), 7, 13), 1))), 0, 8);
 	}
+
+	//***************************
+	//  微信支付 接口
+	//***************************
+	public function wxpay(){
+		$this->http_type = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') || (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https')) ? 'https://' : 'http://';
+		vendor('WeiXinpay.wxpay');
+		$pay_sn = trim($_REQUEST['order_sn']);
+		if (!$pay_sn) {
+			echo json_encode(array('status'=>0,'err'=>'支付信息错误！'));
+			exit();
+		}
+
+		$order_info = M('order')->where('order_sn="'.$pay_sn.'"')->find();
+		if (!$order_info) {
+			echo json_encode(array('status'=>0,'err'=>'没有找到支付订单！'));
+			exit();
+		}
+
+		if (intval($order_info['status'])!=10) {
+			echo json_encode(array('status'=>0,'err'=>'订单状态异常！'));
+			exit();
+		}
+
+		//①、获取用户openid
+		$tools = new \JsApiPay();
+		$openId = $tools->GetOpenid();
+
+		//②、统一下单
+		$input = new \WxPayUnifiedOrder();
+		$input->SetBody("商品购买_".trim($order_info['order_sn']));
+		$input->SetAttach("商品购买_".trim($order_info['order_sn']));
+		$input->SetOut_trade_no($pay_sn);
+		$input->SetTotal_fee(floatval($order_info['amount'])*100);
+		$input->SetTime_start(date("YmdHis"));
+		$input->SetTime_expire(date("YmdHis", time() + 3600));
+		$input->SetGoods_tag("商品购买_".trim($order_info['order_sn']));
+		$input->SetNotify_url($this->http_type.$_SERVER["SERVER_NAME"].$_SERVER['PHP_SELF'].'/Api/Wxpay/notify');
+		$input->SetTrade_type("JSAPI");
+		$input->SetOpenid($openId);
+		$order = \WxPayApi::unifiedOrder($input);
+		//echo '<font color="#f00"><b>统一下单支付单信息</b></font><br/>';
+		//printf_info($order);
+		$jsApiParameters = $tools->GetJsApiParameters($order);
+		if (!$jsApiParameters) {
+			echo json_encode(array('status'=>0,'err'=>'err：订单异常！'));
+			exit();
+		}
+		echo json_encode(array('status'=>1,'arr'=>$jsApiParameters));
+		exit();
+		//获取共享收货地址js函数参数
+		//$editAddress = $tools->GetEditAddressParameters();
+		//$this->assign('jsApiParameters',$jsApiParameters);
+		//$this->assign('editAddress',$editAddress);
+	}
+
+	//***************************
+	//  支付回调 接口
+	//***************************
+	public function notify(){
+		/*$notify = new \PayNotifyCallBack();
+		$notify->Handle(false);*/
+
+		$res_xml = file_get_contents("php://input");
+		libxml_disable_entity_loader(true);
+		$ret = json_decode(json_encode(simplexml_load_string($res_xml,'simpleXMLElement',LIBXML_NOCDATA)),true);
+
+		$path = "./Data/log/";
+		if (!is_dir($path)){
+			mkdir($path,0777);  // 创建文件夹test,并给777的权限（所有权限）
+		}
+		$content = date("Y-m-d H:i:s").'=>'.json_encode($ret)."/r/n".'/n'.'/r/n';  // 写入的内容
+		$file = $path."weixin_".date("Ymd").".log";    // 写入的文件
+		file_put_contents($file,$content,FILE_APPEND);  // 最简单的快速的以追加的方式写入写入方法，
+
+		$data = array();
+		$data['order_sn'] = $ret['out_trade_no'];
+		$data['pay_type'] = 'weixin';
+		$data['trade_no'] = $ret['transaction_id'];
+		$data['total_fee'] = $ret['total_fee'];
+		$result = $this->orderhandle($data);
+		if (is_array($result)) {
+			$xml = "<xml><return_code><![CDATA[SUCCESS]]></return_code><return_msg><![CDATA[OK]]></return_msg>";
+			$xml.="</xml>";
+			echo $xml;
+		}else{
+			echo 'fail';
+		}
+	}
+
+	//***************************
+	//  订单处理 接口
+	//***************************
+	public function orderhandle($data){
+		$uid = intval($_SESSION['user_id']);
+		$order_sn = trim($data['order_sn']);
+		$pay_type = trim($data['pay_type']);
+		$trade_no = trim($data['trade_no']);
+		$total_fee = floatval($data['total_fee']);
+		$check_info = M('order')->where('order_sn="'.$order_sn.'"')->find();
+		if (!$check_info) {
+			return "订单信息错误...";
+		}
+
+		if ($check_info['status']<10) {
+			return "订单异常...";
+		}
+
+		if ($check_info['order_status']>10) {
+			return array('status'=>1,'data'=>$data);
+		}
+
+		$up = array();
+		$up['type'] = $pay_type;
+		$up['price'] = sprintf("%.2f",floatval($total_fee/100));
+		$up['status'] = 40;
+		$up['trade_no'] = $trade_no;
+		$res = M('order')->where('order_sn="'.$order_sn.'"')->save($up);
+		if ($res) {
+			return array('status'=>1,'data'=>$data);
+		}else{
+			return '订单处理失败...';
+		}
+	}
+	
 }

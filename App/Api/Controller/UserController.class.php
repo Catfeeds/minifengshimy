@@ -667,4 +667,47 @@ class UserController extends PublicController {
 		
 	}
 
+	//验证是否已经购买医生咨询
+	public function getcode(){
+		$uid = intval($_REQUEST['uid']);
+        if(!$uid){
+            echo json_encode(array('status'=>0,'err'=>'网络异常！'));
+            exit();
+        }
+        $docid = intval($_REQUEST['docid']);
+        $res = M('order')->where('uid='.$uid.' AND docid='.$docid.' AND status=40')->find();
+        if($res){
+        	echo json_encode(array('status'=>1,'is_buy'=>1));
+			exit();
+        }else{
+        	echo json_encode(array('status'=>0,'is_buy'=>0));
+			exit();
+        }
+	}
+
+	//我的订单
+	public function myOrder(){
+		$uid = intval($_REQUEST['uid']);
+        if(!$uid){
+            echo json_encode(array('status'=>0,'err'=>'网络异常！'));
+            exit();
+        }
+        $list = M('order')->where('uid='.$uid)->select();
+        if(!$list){
+        	 echo json_encode(array('status'=>0,'err'=>'暂无订单！'));
+            exit();
+        }
+        foreach($list as $k => $v){
+        	$list[$k]['addtime'] = date("Y-m-d H:i:s",$v['addtime']);
+        	if(intval($v['status']) == 40){
+        		$list[$k]['status'] = '已支付';
+        	}else{
+        		$list[$k]['status'] = '未支付';
+        	}
+        	$list[$k]['doctor'] = M('doctor')->where('id='.intval($v['docid']))->getField('name');
+        }
+        echo json_encode(array('status'=>1,'list'=>$list));
+        exit();
+	}
+
 }

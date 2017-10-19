@@ -24,7 +24,7 @@
     <div class="aaa_pts_3">
       <form name='form' action="{:U('index')}" method='get'>
       <div class="pro_4 bord_1">
-         <div class="pro_5">
+        <!--  <div class="pro_5">
                订单状态：
                <select class="inp_1 inp_6" name="pay_status" id="status">
 			      <option value="">全部状态</option>
@@ -32,7 +32,7 @@
 			      	<option value="<?php echo $key; ?>" <?php if ($pay_status==$key) { ?>selected="selected"<?php } ?> ><?php echo $val; ?></option>
 			      <?php } ?>
 	           </select>
-         </div>
+         </div> -->
          
         <div class="pro_5">
           咨询时间：
@@ -47,8 +47,8 @@
            <td style="width:90px;">ID</td>
            <td>咨询患者</td>
            <td>接诊医生</td>       
-           <td>支付类型</td>
-           <td>支付金额</td>
+           <!-- <td>支付类型</td> -->
+           <td>支付金额（元）</td>
            <td style="width:150px;">状态</td>
            <td style="width:180px;">时间</td>
            <td style="width:180px;">操作</td>
@@ -58,18 +58,18 @@
 		      <td>{$order.id}</td>
           <td>{$order.u_name}</td>
           <td>{$order.dname}</td>
-		      <td><if condition="$order.type eq 'alipay'">支付宝<elseif condition="$order.type eq 'weixin'" />微信支付<else />现金支付</if></td>
-          <td>{$order.amount}</td>
+		     <!--  <td><if condition="$order.type eq 'alipay'">支付宝<elseif condition="$order.type eq 'weixin'" />微信支付<else />现金支付</if></td> -->
+          <td>{$order.price}</td>
 		      <td class="status">
-    		   <if condition="$order.back eq 1"><font style="color:red">申请退款</font>
-    		   <elseif condition="$order.back eq 2" /><font style="color:#900">已退款</font>
-    		   <else />
-    			 <font class='font_color'><?php echo $order_status[$order['status']]; ?></font>
-    		   </if>
+          <if condition="$order.status eq 10">
+    			 <font class='font_color'>未付款</font>
+           <else />
+           <font class='font_color'>已付款</font>
+           </if>
     		  </td>
         <td>{$order.addtime|date='Y-m-d H:i',###}</td>
 		   <td>
-		      <a href="{:U('show')}?oid={$order.id}">查看咨询</a> | 
+		     <!--  <a href="{:U('show')}?oid={$order.id}">查看咨询</a> |  -->
 			  <a onclick="del_id_url({$order.id})">删除</a>
 		   </td>
 	     </tr>

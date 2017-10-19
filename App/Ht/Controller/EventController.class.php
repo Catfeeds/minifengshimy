@@ -1,14 +1,14 @@
 <?php
 namespace Ht\Controller;
 use Think\Controller;
-class MedicalController extends PublicController{
+class EventController extends PublicController{
 
 	/*
 	*
 	* 构造函数，用于导入外部文件和公共方法
 	*/
 	public function _initialize(){
-		$this->medical = M('medical');
+		$this->event = M('event_type');
 	}
 
 
@@ -19,20 +19,15 @@ class MedicalController extends PublicController{
 	public function index(){
 		//搜索
 		$name = trim($_REQUEST['name']);
-		$type=I('get.type');
-		if($type){
-			$this->assign("type",$type);
-		}
 		//构建搜索条件
 		$condition = '1=1';
-		$condition .= ' AND del = 0'; 
 		//根据支付类型搜索
 		if ($name) {
 			$condition .= " AND name like '%$name%'";
 			$this->assign('name',$name);
 		}
 		//分页
-		$count   = $this->medical->where($condition)->count();// 查询满足要求的总记录数
+		$count   = $this->event->where($condition)->count();// 查询满足要求的总记录数
 		$Page    = new \Think\Page($count,25);// 实例化分页类 传入总记录数和每页显示的记录数(25)
 
 		//头部描述信息，默认值 “共 %TOTAL_ROW% 条记录”
@@ -58,7 +53,7 @@ class MedicalController extends PublicController{
 		$show    = $Page->show();// 分页显示输出
 		// 进行分页数据查询 注意limit方法的参数要使用Page类的属性
 		$list = array();
-		$list = $this->medical->where($condition)->order('id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
+		$list = $this->event->where($condition)->order('id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
 		
 		//echo $where;
 		$this->assign('list',$list);// 赋值数据集
@@ -71,58 +66,26 @@ class MedicalController extends PublicController{
 	 * [add 添加/编辑视频]
 	 */
 	public function add(){
-		ini_set('max_execution_time',0);
 		$id=I('get.id');		
 		if(IS_POST){
 			$array=array();
 			$post=I('post.');
 			$array['name']=$post['name'];
-			$array['cid']=$post['cid'];
-			$array['digest']=$post['digest'];
-			$array['addtime']=time();
-			$array['content']=$post['content'];
-			$array['video']=$post['video'] ? $post['video'] : '';
-			$array['type']=$post['type'];
-			// dump($_REQUEST);
-			// dump($_FILES);
-			// exit;
-			//上传产品大图$file 文件数据流 $exts 文件类型 $path 子目录名称
-			if (!empty($_FILES["photo"]["tmp_name"])) {
-				//文件上传
-				$info = $this->upload_images($_FILES["photo"],array('jpg','png','jpeg'),"medicalimg/".date(Ymd));
-			    if(!is_array($info)) {// 上传错误提示错误信息
-			        $this->error($info);
-			        exit();
-			    }else{// 上传成功 获取上传文件信息
-				    $array['photo'] = 'UploadFiles/'.$info['savepath'].$info['savename'];
-			    }
-			}
-			//上传产品大图$file 文件数据流 $exts 文件类型 $path 子目录名称
-			if (!empty($_FILES['video']['tmp_name'])) {
-				//文件上传
-				$video = $this->upload_images($_FILES["video"],array('mp4','wmv'),"videofiles/".date(Ymd));
-			    if(!is_array($video)) {// 上传错误提示错误信息
-			        $this->error($video);
-			        exit();
-			    }else{// 上传成功 获取上传文件信息
-				    $array['video'] = 'UploadFiles/'.$video['savepath'].$video['savename'];
-			    }
-			}
 			if($post['id']>0){
-				$re=M("medical")->where("id=".$post['id'])->save($array);
+				$re=M("event_type")->where("id=".$post['id'])->save($array);
 			}else{
-				$re=M("medical")->add($array);
+				$re=M("event_type")->add($array);
 			}
 			if($re>0){
-				$this->success("提交成功！");
+				$this->success("提交成功！",'index');
 			}else{
 				$this->error("提交失败！");
 			}
 
 		}else{
 			if($id>0){
-				$medical=M("medical")->where("id=$id")->find();
-				$this->assign("v",$medical);
+				$event=M("event_type")->where("id=$id")->find();
+				$this->assign("v",$event);
 			}
 			$this->display();
 		}
@@ -136,14 +99,14 @@ class MedicalController extends PublicController{
 	public function del(){
 		//获取广告id，查询数据库是否有这条数据
 		$id = intval($_REQUEST['id']);
-		$check_info = $this->video->where('id='.intval($id))->find();
+		$check_info = $this->event->where('id='.intval($id))->find();
 		if (!$check_info) {
 			$this->error('参数错误！');
 			die();
 		}
 
 		//修改对应的显示状态
-		$up = $this->video->where('id='.intval($id))->delete();
+		$up = $this->event->where('id='.intval($id))->delete();
 		if ($up) {
 			$this->success('操作成功.','index');
 		}else{

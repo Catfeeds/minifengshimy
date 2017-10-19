@@ -10,12 +10,12 @@
 </head>
 <body>
 
-<div class="aaa_pts_show_1">【 医学百科管理 】</div>
+<div class="aaa_pts_show_1">【 不良事件类型管理 】</div>
 
 <div class="aaa_pts_show_2">
     <div>
-       <div class="aaa_pts_4"><a href="<?php echo U('Medical/index');?>">全部内容</a></div>
-       <div class="aaa_pts_4"><a href="<?php echo U('Medical/add');?>">添加内容</a></div>
+       <div class="aaa_pts_4"><a href="<?php echo U('Event/index');?>">全部类型</a></div>
+       <div class="aaa_pts_4"><a href="<?php echo U('Event/add');?>">添加类型</a></div>
     </div>
     <div class="aaa_pts_3">
       
@@ -27,10 +27,7 @@
       <table class="pro_3">
          <tr class="tr_1">
            <td>ID</td>
-           <td>名称</td>
-           <td>分类</td>
-           <td>描述</td>
-           <td>添加时间</td>
+           <td>类型名称</td>
            <td>操作</td>
          </tr>
          <tbody id="news_option">
@@ -38,15 +35,8 @@
           <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "暂时没有数据" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><tr>
              <td><?php echo ($v["id"]); ?></td>
              <td><?php echo ($v["name"]); ?></td>
-             <td>
-              <?php if($v["cid"] == 1): ?>大家讲堂
-              <?php elseif($v["cid"] == 2): ?> 学术资讯
-              <?php else: ?> 会议动态<?php endif; ?>
-             </td>
-             <td><?php echo ($v["digest"]); ?></td>
-             <td><?php echo date("Y-m-d H:i:s",$v['addtime']); ?></td>
             <td class="obj_1">
-              <a href="<?php echo U('Medical/add');?>?id=<?php echo ($v["id"]); ?>">修改</a> |
+              <a href="<?php echo U('Event/add');?>?id=<?php echo ($v["id"]); ?>">修改</a> |
               <a onclick="del_id_urls(<?php echo ($v["id"]); ?>)">删除</a>
              </td>
            </tr><?php endforeach; endif; else: echo "暂时没有数据" ;endif; ?>

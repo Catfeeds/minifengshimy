@@ -26,5 +26,9 @@ return array(
     'content'=>array(
         'dir' =>"/minifengshimy/Data/"
     ),	
-
+    'wxpay'  =>array(
+        'applyshop_notify_url'=>"https://gzleren.com/minifengshimy/index.php/Api/Applyshop/wxnotifyurl",
+        'wx_notify_url'       =>"https://gzleren.com/minifengshimy/index.php/Api/Pay/wxnotifyurl",
+        'wx_rznotify_url'       =>"https://gzleren.com/minifengshimy/index.php/Api/Pay/wxrznotifyurl"
+    ),
 );

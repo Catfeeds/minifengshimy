@@ -19,7 +19,7 @@ class PayController extends PublicController{
 		header('Content-type: text/plain');
 		vendor("wxpay.wxpay");
 		//支付完成后的回调处理页面
-		$notify_url = C("wxpay_app.notify_url");
+		$notify_url = C("wxpay.wx_notify_url");
 
 		$uid = intval($_REQUEST['uid']);
 		if (!$uid) {
@@ -28,7 +28,7 @@ class PayController extends PublicController{
 		}
 
 		$order_id = intval($_REQUEST['order_id']);
-		$pay_type = trim($_REQUEST['pay_type']);
+		// $pay_type = trim($_REQUEST['pay_type']);
 		$order_sn = trim($_REQUEST['order_sn']);
 
 		$order = M('order')->where("id=".intval($order_id)." AND order_sn='".$order_sn."' AND del=0")->find();
@@ -36,15 +36,15 @@ class PayController extends PublicController{
 			echo json_encode(array('status'=>0,'err'=>'订单信息错误.'));
 			exit();
 		}
-		$product=M('order_product')->where("`order_id`=".intval($order['id']))->field('name')->select();
-		$body = '';
-		foreach ($product as $key => $val) {
-			if ($key==0) {
-				$body .=$val['name'];
-			}else{
-				$body .=','.$val['name'];
-			}
-		}
+		// $product=M('order_product')->where("`order_id`=".intval($order['id']))->field('name')->select();
+		// $body = '';
+		// foreach ($product as $key => $val) {
+		// 	if ($key==0) {
+		// 		$body .=$val['name'];
+		// 	}else{
+		// 		$body .=','.$val['name'];
+		// 	}
+		// }
 
 		// 获取支付金额		
 		$total = $order['price']*100;     // 转成分
@@ -113,7 +113,7 @@ class PayController extends PublicController{
 			"alipay_trade_no"      => $trade_no,     //支付宝交易号；
 			"alipay_remark"  => $trade_status, //交易状态
 			"finishtime"   => $notify_time,  //通知的发送时间。
-			"status"=>20,
+			"status"=>40,
 		);
 		if($arr['result_code'] == 'SUCCESS') {
 			//更新订单状态
@@ -122,11 +122,15 @@ class PayController extends PublicController{
             if($re){
             	//更新成功,判断该用户是否是激活会员,如果是则加入重销奖励
             	$log=$order->where('order_sn="'.trim($arr['out_trade_no']).'"')->find();
-            	$checkUser=M("user")->field("status")->where("id='".$log['uid']."'")->find();
-            	if($checkUser['status']==33){
-            		$this->getJifen($log['uid'],$log['id'],$log['price']);
-            		$this->addprize($log['uid'],"respend",$log['price']);
-            	}
+            	$temp_docid = intval($log['docid']);
+            	$yuan_total = M('doctor')->where('id='.$temp_docid)->getField('total');
+            	$temp['price'] = floatval($yuan_total) + floatval($log['price']);
+            	M('doctor')->where('id='.$temp_docid)->save($temp);
+            	// $checkUser=M("user")->field("status")->where("id='".$log['uid']."'")->find();
+            	// if($checkUser['status']==33){
+            	// 	$this->getJifen($log['uid'],$log['id'],$log['price']);
+            	// 	$this->addprize($log['uid'],"respend",$log['price']);
+            	// }
             	//返回xml格式的通知回去
             	$return = array('return_code'=>'SUCCESS','return_msg'=>'OK');
 		        $re_xml = '<xml>';
