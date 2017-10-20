@@ -85,7 +85,9 @@ class ReportController extends PublicController {
         $data['hong'] = $_REQUEST['hong'];
         $data['xue_hong'] = $_REQUEST['xue_hong'];
         $data['ban'] = $_REQUEST['ban'];
+        $data['baidang'] = $_REQUEST['baidang'];
         $data['bili'] = $_REQUEST['bili'];
+        $data['bizhi'] = $_REQUEST['bizhi'];
         $data['lin_num'] = $_REQUEST['lin_num'];
         $data['shi_num'] = $_REQUEST['shi_num'];
         $data['xue_hong_non'] = $_REQUEST['xue_hong_non'];
@@ -129,6 +131,17 @@ class ReportController extends PublicController {
         $data['na'] = $_REQUEST['na'];
         $data['eryang'] = $_REQUEST['eryang'];
         $data['addtime'] = $_REQUEST['addtime'];
+        $rid = intval($_REQUEST['rid']);
+        if($rid){
+            $res = M('report')->where('id='.$rid)->save($data);
+            if($res){
+                echo json_encode(array('status'=>1,'err'=>'保存成功！'));
+                exit();
+            }else{
+                echo json_encode(array('status'=>0,'err'=>'保存失败！'));
+                exit();
+            } 
+        }
         $res = M('report')->add($data);
         if($res){
             echo json_encode(array('status'=>1,'err'=>'添加成功！'));
@@ -141,21 +154,13 @@ class ReportController extends PublicController {
 
     //不良事件详情
     public function detail(){
-        $id = $_REQUEST['eid'];
+        $id = $_REQUEST['rid'];
         if(!$id){
             echo json_encode(array('status'=>0,'err'=>'数据异常!'));
             exit();
         }
-        $info = M('event')->where('id='.intval($id))->find();
-        $info['type_name'] = M('event_type')->where('id='.intval($info['type_id']))->getField('name');
-        $imgSrc = array();
-        if($info['photo']){
-            $img = explode(',', trim($info['photo'],','));
-            foreach($img as $k => $v) {
-                array_push($imgSrc,__DATAURL__.$v);
-            }
-        }
-        echo json_encode(array('status'=>1,'info'=>$info,'imgSrc'=>$imgSrc));
+        $info = M('report')->where('id='.intval($id))->find();
+        echo json_encode(array('status'=>1,'info'=>$info));
         exit();
     }
 
@@ -205,12 +210,12 @@ class ReportController extends PublicController {
             echo json_encode(array('status'=>0,'err'=>'网络错误！'));
             exit();
         }
-        $id = intval($_REQUEST['id']);
+        $id = intval($_REQUEST['rid']);
         if (!$id) {
             echo json_encode(array('status'=>0,'err'=>'数据异常！'));
             exit();
         }
-        $res = M('event')->where('id='.$id)->delete();
+        $res = M('report')->where('id='.$id)->delete();
         if($res){
             echo json_encode(array('status'=>1,'err'=>'删除成功！'));
             exit();
