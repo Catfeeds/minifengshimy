@@ -221,7 +221,7 @@ class ReportController extends PublicController {
             exit();
         }else{
             echo json_encode(array('status'=>0,'err'=>'删除失败！'));
-            exit();
+            exit();     
         }
    }
 

@@ -287,81 +287,21 @@ class PaymentController extends PublicController {
     // 购物车结算 下订单
     //***********************************
     public function payment(){
-    	// $product=M("product");
-		//运费
-		// $post = M('post');
 		$order=M("order");
 		$order_pro=M("order_product");
-		// $shopping=M('shopping_char');
-
+	
 		$uid = intval($_REQUEST['uid']);
 		if (!$uid) {
 			echo json_encode(array('status'=>0,'err'=>'登录状态异常.'));
 			exit();
 		}
-
-		// $cart_id = trim($_REQUEST['cart_id'],',');
-		// if (!$cart_id) {
-		// 	echo json_encode(array('status'=>0,'err'=>'数据异常.'));
-		// 	exit();
-		// }
+	
 
 		//生成订单
 		  try {
 		  	$qz=C('DB_PREFIX');//前缀
 
-		 //  	$cart_id = explode(',', $cart_id);
-			// $shop=array();
-			// foreach($cart_id as $ke => $vl){
-			// 	$shop[$ke]=$shopping->where(''.$qz.'shopping_char.uid='.intval($uid).' and '.$qz.'shopping_char.id='.$vl)->join('LEFT JOIN __PRODUCT__ ON __PRODUCT__.id=__SHOPPING_CHAR__.pid')->field(''.$qz.'shopping_char.pid,'.$qz.'shopping_char.num,'.$qz.'shopping_char.shop_id,'.$qz.'shopping_char.buff,'.$qz.'shopping_char.price,'.$qz.'product.price_yh')->find();
-			// 	$num+=$shop[$ke]['num'];
-   //              if($shop[$ke]['buff']!=''){
-			//     	$ozprice+=$shop[$ke]['price']*$shop[$ke]['num'];
-			//     }else{
-			//     	$shop[$ke]['price']=$shop[$ke]['price_yh'];
-			//     	$ozprice+=$shop[$ke]['price']*$shop[$ke]['num'];
-			//     }
-			// }
-
-			// $yunPrice = array();
-			// if ($_POST['yunfei']) {
-			// 	$yunPrice = $post->where('id='.intval($_POST['yunfei']))->find();
-			// }
-			
-			// $data['shop_id']=$shop[$ke]['shop_id'];
-			// $data['uid']=intval($uid);
-
-   //          if(!empty($yunPrice)){
-   //              $data['post'] = $yunPrice['id'];
-   //              $data['price']=floatval($ozprice)+$yunPrice['price'];
-			// }else{
-   //              $data['post'] = 0;
-   //              $data['price']=floatval($ozprice);
-			// }
-
-			// $data['amount'] = $data['price'];
-			// $vid = intval($_POST['vid']);
-			// if ($vid) {
-			// 	$vouinfo = M('user_voucher')->where('status=1 AND uid='.intval($uid).' AND vid='.intval($vid))->find();
-			// 	$chk = M('order')->where('uid='.intval($uid).' AND vid='.intval($vid).' AND status>0')->find();
-			// 	if (!$vouinfo || $chk) {
-			// 		//throw new \Exception("此优惠券不可用，请选择其他.".__LINE__);
-			// 		echo json_encode(array('status'=>0,'err'=>'此优惠券不可用，请选择其他.'));
-			// 		exit();
-			// 	}
-			// 	if ($vouinfo['end_time']<time()) {
-			// 		//throw new \Exception("优惠券已过期了.".__LINE__);
-			// 		echo json_encode(array('status'=>0,'err'=>"优惠券已过期了.".__LINE__));
-			// 		exit();
-			// 	}
-			// 	if ($vouinfo['start_time']>time()) {
-			// 		//throw new \Exception("优惠券还未生效.".__LINE__);
-			// 		echo json_encode(array('status'=>0,'err'=>"优惠券还未生效.".__LINE__));
-			// 		exit();
-			// 	}
-			// 	$data['vid'] = intval($vid);
-			// 	$data['amount'] = floatval($data['price'])-floatval($vouinfo['amount']);
-			// }
+		
 		  	$data['uid'] = $uid;
 		  	$data['price'] = $_REQUEST['price'];
 			$data['addtime']=time();

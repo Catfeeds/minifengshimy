@@ -1,0 +1,143 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>后台管理</title>
+<link href="/minifengshimy/Public/ht/css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/minifengshimy/Public/ht/js/jquery1.8.js"></script>
+<script type="text/javascript" src="/minifengshimy/Public/ht/js/action.js"></script>
+<script type="text/javascript" src="/minifengshimy/Public/ht/js/jCalendar.js"></script>
+<script type="text/javascript" src="/minifengshimy/Public/ht/js/jquery.XYTipsWindow.min.2.8.js"></script>
+<script type="text/javascript" src="/minifengshimy/Public/ht/js/mydate.js"></script>
+<link href="/minifengshimy/Public/ht/css/order.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<div class="aaa_pts_show_1">【 咨询订单管理 】</div>
+
+
+<div class="aaa_pts_show_2">
+    <div>
+       <div class="aaa_pts_4"><a href="<?php echo U('index');?>">全部咨询订单</a></div>
+    </div>
+    
+    <div class="aaa_pts_3">
+      <form name='form' action="<?php echo U('index');?>" method='get'>
+      <div class="pro_4 bord_1">
+        <!--  <div class="pro_5">
+               订单状态：
+               <select class="inp_1 inp_6" name="pay_status" id="status">
+			      <option value="">全部状态</option>
+			      <?php foreach ($order_status as $key => $val) { ?>
+			      	<option value="<?php echo $key; ?>" <?php if ($pay_status==$key) { ?>selected="selected"<?php } ?> ><?php echo $val; ?></option>
+			      <?php } ?>
+	           </select>
+         </div> -->
+         
+        <div class="pro_5">
+          咨询时间：
+          <input class="inp_1 inp_6" id="start_time" name="start_time" value="<?php echo $start_time ?>" onfocus="MyCalendar.SetDate(this)">
+          <input class="inp_1 inp_6" id="end_time" name="end_time" value="<?php echo $end_time ?>" onfocus="MyCalendar.SetDate(this)">
+		    </div>
+         <div class="pro_6"><input type="button" class="aaa_pts_web_3" value="搜 索" style="margin:0;" onclick="product_option();"></div>
+      </div>
+      </form>
+      <table class="pro_3">
+         <tr class="tr_1">  
+           <td style="width:90px;">ID</td>
+           <td>咨询患者</td>
+           <td>接诊医生</td>       
+           <!-- <td>支付类型</td> -->
+           <td>支付金额（元）</td>
+           <td style="width:150px;">状态</td>
+           <td style="width:180px;">时间</td>
+           <td style="width:180px;">操作</td>
+         </tr>
+         <?php if(is_array($order_list)): $i = 0; $__LIST__ = $order_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$order): $mod = ($i % 2 );++$i;?><tr data-id="<?php echo ($order["id"]); ?>" data-name="<?php echo ($order["name"]); ?>">
+		      <td><?php echo ($order["id"]); ?></td>
+          <td><?php echo ($order["u_name"]); ?></td>
+          <td><?php echo ($order["dname"]); ?></td>
+		     <!--  <td><?php if($order["type"] == 'alipay'): ?>支付宝<?php elseif($order["type"] == 'weixin'): ?>微信支付<?php else: ?>现金支付<?php endif; ?></td> -->
+          <td><?php echo ($order["price"]); ?></td>
+		      <td class="status">
+          <?php if($order["status"] == 10): ?><font class='font_color'>未付款</font>
+           <?php else: ?>
+           <font class='font_color'>已付款</font><?php endif; ?>
+    		  </td>
+        <td><?php echo (date('Y-m-d H:i',$order["addtime"])); ?></td>
+		   <td>
+		     <!--  <a href="<?php echo U('show');?>?oid=<?php echo ($order["id"]); ?>">查看咨询</a> |  -->
+			  <a onclick="del_id_url(<?php echo ($order["id"]); ?>)">删除</a>
+		   </td>
+	     </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+         <tr>
+            <td colspan="10" class="td_2">
+                <?php echo ($page); ?> 
+             </td>
+         </tr>
+      </table>
+    </div>
+    
+</div>
+
+<script>
+//搜索按钮点击事件
+function product_option(){
+  $('form').submit(); 
+}
+
+function openDialog(){
+ 	//alert('aaa');die();
+	location="<?php echo U('Inout/expOrder');?>";
+}
+
+function openDialog2(){
+	var shop_id = $('#shop_id').val();
+	var type = $('#type').val();
+	var status = $('#status').val();
+	var start_time = $('#start_time').val();
+	var end_time = $('#end_time').val();
+ 	//alert('aaa');die();
+	location="<?php echo U('Inout/expOrder');?>?shop_id="+shop_id+"&type="+type+"&status="+status+"&start_time="+start_time+'&end_time='+end_time;
+}
+
+//订单状态字体颜色设置
+$('.font_color').each(function(index, element) {
+    var obj = $(this);
+	switch(obj.html()){
+	  case '待发货':
+	  case '交易完成':
+	  case '待收货':
+	     obj.css('color','#090');
+	  break;
+	  case '交易关闭':
+	  case '已退款':
+	     obj.css('color','#900');
+	  break;
+	  case '申请退款':
+		obj.css('color','#f00');
+	  default:
+	  	obj.css('color','#063559');
+	  break;
+	}
+});
+
+//选择商家按钮事件
+function win_open(url,width,height){
+
+   height==null ? height=600 : height;
+   width==null ?  width=800 : width;
+   var myDate=new Date()
+   window.open(url,'newwindow'+myDate.getSeconds(),'height='+height+',width='+width);
+}
+
+//订单删除方法
+function del_id_url(id){
+   if(confirm("确认删除吗？"))
+   {
+	  location='<?php echo U("del");?>?did='+id;
+   }
+}
+</script>
+</body>
+</html>

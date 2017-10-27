@@ -1,0 +1,1312 @@
+[ 2017-10-27T17:35:35+08:00 ] ::1 /minifengshimy/index.php/Ht/Index/index.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimy\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000928s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001005s ]
+
+[ 2017-10-27T17:35:36+08:00 ] ::1 /minifengshimy/index.php/Ht/Login/index.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimy\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001135s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001285s ]
+SQL: SHOW COLUMNS FROM `lr_program` [ RunTime:0.0301s ]
+SQL: SELECT * FROM `lr_program` LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002477s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002552s ]
+NOTIC: [8] Undefined variable: key F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\2d4ce69e9c2d15d777794fcdbaefd3a2.php 第 24 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024997s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025067s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009438s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009492s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002431s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002478s ]
+
+[ 2017-10-27T17:35:41+08:00 ] ::1 /minifengshimy/index.php/Ht/Login/index.html?key=
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimy\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000792s ]
+SQL: SHOW COLUMNS FROM `lr_adminuser` [ RunTime:0.0286s ]
+SQL: SELECT * FROM `lr_adminuser` WHERE ( name='admin' AND del<1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lr_program` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `lr_program` LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: shop_id F:\phpStudy\WWW\minifengshimy\App\Ht\Controller\LoginController.class.php 第 21 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001604s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001715s ]
+
+[ 2017-10-27T17:35:42+08:00 ] ::1 /minifengshimy/index.php/Ht/Index/index.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimy\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000783s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000841s ]
+SQL: SHOW COLUMNS FROM `lr_web` [ RunTime:0.1354s ]
+SQL: SELECT `concent` FROM `lr_web` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000149s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000235s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070280s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070427s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000945s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001025s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001158s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001227s ]
+
+[ 2017-10-27T17:35:42+08:00 ] ::1 /minifengshimy/index.php/Ht/Page/adminindex.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimy\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000820s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000881s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042028s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042094s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000813s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000891s ]
+
+[ 2017-10-27T17:35:46+08:00 ] ::1 /minifengshimy/index.php/Ht/Evaluate/index.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimy\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000769s ]
+ERR: 模板不存在:./App/Ht/View/Evaluate/index.html
+
+[ 2017-10-27T17:35:49+08:00 ] ::1 /minifengshimy/index.php/Ht/Supply/index.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimy\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000653s ]
+SQL: SHOW COLUMNS FROM `lr_supply` [ RunTime:0.0047s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lr_supply` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lr_supply` WHERE ( 1=1 ) ORDER BY id desc LIMIT 0,25   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009890s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009948s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000571s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000754s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000793s ]
+
+[ 2017-10-27T17:36:11+08:00 ] ::1 /minifengshimy/index.php/Ht/Order/index.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimy\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000724s ]
+NOTIC: [2048] Declaration of Ht\Controller\OrderController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\phpStudy\WWW\minifengshimy\App\Ht\Controller\OrderController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `lr_order` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `lr_order_product` [ RunTime:0.0056s ]
+NOTIC: [8] Undefined index: shop_id F:\phpStudy\WWW\minifengshimy\App\Ht\Controller\OrderController.class.php 第 32 行.
+NOTIC: [8] Undefined index: pay_type F:\phpStudy\WWW\minifengshimy\App\Ht\Controller\OrderController.class.php 第 35 行.
+NOTIC: [8] Undefined index: pay_status F:\phpStudy\WWW\minifengshimy\App\Ht\Controller\OrderController.class.php 第 36 行.
+NOTIC: [8] Undefined index: start_time F:\phpStudy\WWW\minifengshimy\App\Ht\Controller\OrderController.class.php 第 37 行.
+NOTIC: [8] Undefined index: end_time F:\phpStudy\WWW\minifengshimy\App\Ht\Controller\OrderController.class.php 第 38 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lr_order` WHERE ( 1=1 AND del=0 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lr_order` WHERE ( 1=1 AND del=0 ) ORDER BY id desc LIMIT 0,25   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `lr_user` [ RunTime:0.0047s ]
+SQL: SELECT `name` FROM `lr_user` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lr_doctor` [ RunTime:0.0045s ]
+SQL: SELECT `name` FROM `lr_doctor` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `lr_user` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `lr_doctor` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+NOTIC: [8] Undefined variable: pay_status F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\bb73bcf6e97ca0b1f5a53051a7857618.php 第 32 行.
+NOTIC: [8] Undefined variable: pay_status F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\bb73bcf6e97ca0b1f5a53051a7857618.php 第 32 行.
+NOTIC: [8] Undefined variable: pay_status F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\bb73bcf6e97ca0b1f5a53051a7857618.php 第 32 行.
+NOTIC: [8] Undefined variable: pay_status F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\bb73bcf6e97ca0b1f5a53051a7857618.php 第 32 行.
+NOTIC: [8] Undefined variable: pay_status F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\bb73bcf6e97ca0b1f5a53051a7857618.php 第 32 行.
+NOTIC: [8] Undefined variable: start_time F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\bb73bcf6e97ca0b1f5a53051a7857618.php 第 39 行.
+NOTIC: [8] Undefined variable: end_time F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\bb73bcf6e97ca0b1f5a53051a7857618.php 第 40 行.
+NOTIC: [8] Undefined index: name F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\bb73bcf6e97ca0b1f5a53051a7857618.php 第 56 行.
+NOTIC: [8] Undefined index: name F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\bb73bcf6e97ca0b1f5a53051a7857618.php 第 56 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033673s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033729s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000480s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000514s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000724s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000762s ]
+
+[ 2017-10-27T17:36:24+08:00 ] ::1 /minifengshimy/index.php/Ht/Tixian/index.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimy\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000797s ]
+SQL: SHOW COLUMNS FROM `lr_tixian` [ RunTime:0.1030s ]
+SQL: SELECT * FROM `lr_tixian`  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `lr_user` [ RunTime:0.0104s ]
+SQL: SELECT `uname` FROM `lr_user` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `uname` FROM `lr_user` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+NOTIC: [8] Undefined variable: page F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\24580b1b19522322e3776e86846f04e0.php 第 46 行.
+NOTIC: [8] Undefined variable: page F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\24580b1b19522322e3776e86846f04e0.php 第 46 行.
+NOTIC: [8] Undefined variable: page_index F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\24580b1b19522322e3776e86846f04e0.php 第 55 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031838s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031953s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001022s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001102s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001484s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001589s ]
+
+[ 2017-10-27T17:36:28+08:00 ] ::1 /minifengshimy/index.php/Ht/Evaluate/index.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimy\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000751s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000809s ]
+ERR: 模板不存在:./App/Ht/View/Evaluate/index.html
+
+[ 2017-10-27T17:36:32+08:00 ] ::1 /minifengshimy/index.php/Ht/Medical/index.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimy\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000906s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000988s ]
+SQL: SHOW COLUMNS FROM `lr_medical` [ RunTime:0.0379s ]
+NOTIC: [8] Undefined index: name F:\phpStudy\WWW\minifengshimy\App\Ht\Controller\MedicalController.class.php 第 21 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lr_medical` WHERE ( 1=1 AND del = 0 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `lr_medical` WHERE ( 1=1 AND del = 0 ) ORDER BY id desc LIMIT 0,25   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+NOTIC: [8] Undefined variable: name F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\b2547471e9070782d4d64e9f22b08801.php 第 23 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023762s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023811s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000523s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000562s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000718s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000758s ]
+
+[ 2017-10-27T17:36:36+08:00 ] ::1 /minifengshimy/index.php/Ht/Supply/index.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimy\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000717s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000778s ]
+SQL: SHOW COLUMNS FROM `lr_supply` [ RunTime:0.0035s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lr_supply` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `lr_supply` WHERE ( 1=1 ) ORDER BY id desc LIMIT 0,25   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009314s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009369s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000693s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000731s ]
+
+[ 2017-10-27T17:36:38+08:00 ] ::1 /minifengshimy/index.php/Ht/Order/index.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimy\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001097s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001165s ]
+NOTIC: [2048] Declaration of Ht\Controller\OrderController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\phpStudy\WWW\minifengshimy\App\Ht\Controller\OrderController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `lr_order` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `lr_order_product` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: shop_id F:\phpStudy\WWW\minifengshimy\App\Ht\Controller\OrderController.class.php 第 32 行.
+NOTIC: [8] Undefined index: pay_type F:\phpStudy\WWW\minifengshimy\App\Ht\Controller\OrderController.class.php 第 35 行.
+NOTIC: [8] Undefined index: pay_status F:\phpStudy\WWW\minifengshimy\App\Ht\Controller\OrderController.class.php 第 36 行.
+NOTIC: [8] Undefined index: start_time F:\phpStudy\WWW\minifengshimy\App\Ht\Controller\OrderController.class.php 第 37 行.
+NOTIC: [8] Undefined index: end_time F:\phpStudy\WWW\minifengshimy\App\Ht\Controller\OrderController.class.php 第 38 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lr_order` WHERE ( 1=1 AND del=0 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `lr_order` WHERE ( 1=1 AND del=0 ) ORDER BY id desc LIMIT 0,25   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `lr_user` [ RunTime:0.0036s ]
+SQL: SELECT `name` FROM `lr_user` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lr_doctor` [ RunTime:0.0039s ]
+SQL: SELECT `name` FROM `lr_doctor` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `lr_user` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `lr_doctor` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+NOTIC: [8] Undefined variable: pay_status F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\bb73bcf6e97ca0b1f5a53051a7857618.php 第 32 行.
+NOTIC: [8] Undefined variable: pay_status F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\bb73bcf6e97ca0b1f5a53051a7857618.php 第 32 行.
+NOTIC: [8] Undefined variable: pay_status F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\bb73bcf6e97ca0b1f5a53051a7857618.php 第 32 行.
+NOTIC: [8] Undefined variable: pay_status F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\bb73bcf6e97ca0b1f5a53051a7857618.php 第 32 行.
+NOTIC: [8] Undefined variable: pay_status F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\bb73bcf6e97ca0b1f5a53051a7857618.php 第 32 行.
+NOTIC: [8] Undefined variable: start_time F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\bb73bcf6e97ca0b1f5a53051a7857618.php 第 39 行.
+NOTIC: [8] Undefined variable: end_time F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\bb73bcf6e97ca0b1f5a53051a7857618.php 第 40 行.
+NOTIC: [8] Undefined index: name F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\bb73bcf6e97ca0b1f5a53051a7857618.php 第 56 行.
+NOTIC: [8] Undefined index: name F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\bb73bcf6e97ca0b1f5a53051a7857618.php 第 56 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010991s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011043s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000538s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000579s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000798s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000839s ]
+
+[ 2017-10-27T17:41:05+08:00 ] ::1 /minifengshimy/index.php/Ht/Order/index.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimy\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000825s ]
+NOTIC: [2048] Declaration of Ht\Controller\OrderController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') F:\phpStudy\WWW\minifengshimy\App\Ht\Controller\OrderController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `lr_order` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `lr_order_product` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: shop_id F:\phpStudy\WWW\minifengshimy\App\Ht\Controller\OrderController.class.php 第 32 行.
+NOTIC: [8] Undefined index: pay_type F:\phpStudy\WWW\minifengshimy\App\Ht\Controller\OrderController.class.php 第 35 行.
+NOTIC: [8] Undefined index: pay_status F:\phpStudy\WWW\minifengshimy\App\Ht\Controller\OrderController.class.php 第 36 行.
+NOTIC: [8] Undefined index: start_time F:\phpStudy\WWW\minifengshimy\App\Ht\Controller\OrderController.class.php 第 37 行.
+NOTIC: [8] Undefined index: end_time F:\phpStudy\WWW\minifengshimy\App\Ht\Controller\OrderController.class.php 第 38 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `lr_order` WHERE ( 1=1 AND del=0 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `lr_order` WHERE ( 1=1 AND del=0 ) ORDER BY id desc LIMIT 0,25   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `lr_user` [ RunTime:0.0039s ]
+SQL: SELECT `name` FROM `lr_user` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lr_doctor` [ RunTime:0.0045s ]
+SQL: SELECT `name` FROM `lr_doctor` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `lr_user` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `lr_doctor` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+NOTIC: [8] Undefined variable: pay_status F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\bb73bcf6e97ca0b1f5a53051a7857618.php 第 32 行.
+NOTIC: [8] Undefined variable: pay_status F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\bb73bcf6e97ca0b1f5a53051a7857618.php 第 32 行.
+NOTIC: [8] Undefined variable: pay_status F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\bb73bcf6e97ca0b1f5a53051a7857618.php 第 32 行.
+NOTIC: [8] Undefined variable: pay_status F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\bb73bcf6e97ca0b1f5a53051a7857618.php 第 32 行.
+NOTIC: [8] Undefined variable: pay_status F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\bb73bcf6e97ca0b1f5a53051a7857618.php 第 32 行.
+NOTIC: [8] Undefined variable: start_time F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\bb73bcf6e97ca0b1f5a53051a7857618.php 第 39 行.
+NOTIC: [8] Undefined variable: end_time F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\bb73bcf6e97ca0b1f5a53051a7857618.php 第 40 行.
+NOTIC: [8] Undefined index: name F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\bb73bcf6e97ca0b1f5a53051a7857618.php 第 56 行.
+NOTIC: [8] Undefined index: name F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\bb73bcf6e97ca0b1f5a53051a7857618.php 第 56 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010539s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010592s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000587s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000895s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000943s ]
+
+[ 2017-10-27T17:43:35+08:00 ] ::1 /minifengshimy/index.php/Ht/Doctor/index.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimy\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000745s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000798s ]
+NOTIC: [8] Undefined index: id F:\phpStudy\WWW\minifengshimy\App\Ht\Controller\DoctorController.class.php 第 14 行.
+NOTIC: [8] Undefined index: shop_id F:\phpStudy\WWW\minifengshimy\App\Ht\Controller\DoctorController.class.php 第 15 行.
+NOTIC: [8] Undefined index: type F:\phpStudy\WWW\minifengshimy\App\Ht\Controller\DoctorController.class.php 第 18 行.
+NOTIC: [8] Undefined index: tuijian F:\phpStudy\WWW\minifengshimy\App\Ht\Controller\DoctorController.class.php 第 19 行.
+NOTIC: [8] Undefined index: name F:\phpStudy\WWW\minifengshimy\App\Ht\Controller\DoctorController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `lr_doctor` [ RunTime:0.0046s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lr_doctor` WHERE ( 1=1 AND del=0 ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: page F:\phpStudy\WWW\minifengshimy\App\Ht\Controller\DoctorController.class.php 第 32 行.
+SQL: SELECT * FROM `lr_doctor` WHERE ( 1=1 AND del=0 ) ORDER BY addtime desc LIMIT 0,20   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034733s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034794s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000556s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000595s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001234s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001297s ]
+
+[ 2017-10-27T17:45:30+08:00 ] ::1 /minifengshimy/index.php/Ht/Evaluate/index.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimy\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000835s ]
+SQL: SHOW COLUMNS FROM `lr_evaluate` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `lr_evaluate`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+NOTIC: [8] Undefined index: photo_x F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\07d091383187bbcebd79062686fef87c.php 第 35 行.
+NOTIC: [8] Undefined index: photo_x F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\07d091383187bbcebd79062686fef87c.php 第 35 行.
+NOTIC: [8] Undefined index: photo_x F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\07d091383187bbcebd79062686fef87c.php 第 35 行.
+NOTIC: [8] Undefined variable: page F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\07d091383187bbcebd79062686fef87c.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009529s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009586s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000536s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000716s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000756s ]
+
+[ 2017-10-27T17:46:04+08:00 ] ::1 /minifengshimy/index.php/Ht/Evaluate/index.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimy\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000690s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000748s ]
+SQL: SHOW COLUMNS FROM `lr_evaluate` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `lr_evaluate`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+NOTIC: [8] Undefined index: photo_x F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\07d091383187bbcebd79062686fef87c.php 第 35 行.
+NOTIC: [8] Undefined index: photo_x F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\07d091383187bbcebd79062686fef87c.php 第 35 行.
+NOTIC: [8] Undefined index: photo_x F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\07d091383187bbcebd79062686fef87c.php 第 35 行.
+NOTIC: [8] Undefined variable: page F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\07d091383187bbcebd79062686fef87c.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007843s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007885s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000616s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000654s ]
+
+[ 2017-10-27T17:49:58+08:00 ] ::1 /minifengshimy/index.php/Ht/Evaluate/index.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimy\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000814s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000874s ]
+SQL: SHOW COLUMNS FROM `lr_evaluate` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `lr_evaluate`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+NOTIC: [8] Undefined index: photo_x F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\07d091383187bbcebd79062686fef87c.php 第 35 行.
+NOTIC: [8] Undefined index: photo_x F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\07d091383187bbcebd79062686fef87c.php 第 35 行.
+NOTIC: [8] Undefined index: photo_x F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\07d091383187bbcebd79062686fef87c.php 第 35 行.
+NOTIC: [8] Undefined variable: page F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\07d091383187bbcebd79062686fef87c.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008984s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009030s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000584s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000685s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000722s ]
+
+[ 2017-10-27T17:50:00+08:00 ] ::1 /minifengshimy/index.php/Ht/Evaluate/add.html?id=1
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimy\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000067s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000910s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000978s ]
+NOTIC: [8] Undefined index: submit F:\phpStudy\WWW\minifengshimy\App\Ht\Controller\EvaluateController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `lr_evaluate` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `lr_evaluate` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 14 行.
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 14 行.
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 14 行.
+NOTIC: [2] Division by zero F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 14 行.
+NOTIC: [8] Undefined variable: id F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 72 行.
+NOTIC: [8] Undefined variable: page F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 72 行.
+NOTIC: [8] Undefined variable: type F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 72 行.
+NOTIC: [8] Undefined variable: name F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 72 行.
+NOTIC: [8] Undefined variable: shop_id F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 72 行.
+NOTIC: [8] Undefined variable: pro_allinfo F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 77 行.
+NOTIC: [8] Undefined variable: pro_allinfo F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 84 行.
+NOTIC: [8] Undefined variable: pro_allinfo F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 91 行.
+NOTIC: [8] Undefined variable: pro_allinfo F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 93 行.
+NOTIC: [8] Undefined variable: shangchang F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 99 行.
+NOTIC: [8] Undefined variable: pro_allinfo F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 100 行.
+NOTIC: [8] Undefined variable: pro_allinfo F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 108 行.
+NOTIC: [8] Undefined variable: pro_allinfo F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 114 行.
+NOTIC: [8] Undefined variable: pro_allinfo F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 120 行.
+NOTIC: [8] Undefined variable: pro_allinfo F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 126 行.
+NOTIC: [8] Undefined variable: cate_list F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 135 行.
+NOTIC: [8] Undefined variable: pro_allinfo F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 148 行.
+NOTIC: [8] Undefined variable: pro_allinfo F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 159 行.
+NOTIC: [8] Undefined variable: pro_allinfo F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 173 行.
+NOTIC: [8] Undefined variable: pro_allinfo F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 183 行.
+NOTIC: [8] Undefined variable: pro_allinfo F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 189 行.
+NOTIC: [8] Undefined variable: pro_allinfo F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 195 行.
+NOTIC: [8] Undefined variable: pro_allinfo F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 201 行.
+NOTIC: [8] Undefined variable: pro_allinfo F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 202 行.
+NOTIC: [8] Undefined variable: pro_allinfo F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 208 行.
+NOTIC: [8] Undefined variable: pro_allinfo F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 209 行.
+NOTIC: [8] Undefined variable: pro_allinfo F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 215 行.
+NOTIC: [8] Undefined variable: pro_allinfo F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 221 行.
+NOTIC: [8] Undefined variable: pro_allinfo F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 227 行.
+NOTIC: [8] Undefined variable: pro_allinfo F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 232 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013606s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013671s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000613s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000656s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001245s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001335s ]
+
+[ 2017-10-27T17:50:13+08:00 ] ::1 /minifengshimy/index.php/Ht/Evaluate/index.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimy\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001112s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001178s ]
+SQL: SHOW COLUMNS FROM `lr_evaluate` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `lr_evaluate`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+NOTIC: [8] Undefined index: photo_x F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\07d091383187bbcebd79062686fef87c.php 第 35 行.
+NOTIC: [8] Undefined index: photo_x F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\07d091383187bbcebd79062686fef87c.php 第 35 行.
+NOTIC: [8] Undefined index: photo_x F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\07d091383187bbcebd79062686fef87c.php 第 35 行.
+NOTIC: [8] Undefined variable: page F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\07d091383187bbcebd79062686fef87c.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008803s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008857s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000702s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000741s ]
+
+[ 2017-10-27T17:50:15+08:00 ] ::1 /minifengshimy/index.php/Ht/Evaluate/index.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimy\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000678s ]
+SQL: SHOW COLUMNS FROM `lr_evaluate` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `lr_evaluate`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+NOTIC: [8] Undefined index: photo_x F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\07d091383187bbcebd79062686fef87c.php 第 35 行.
+NOTIC: [8] Undefined index: photo_x F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\07d091383187bbcebd79062686fef87c.php 第 35 行.
+NOTIC: [8] Undefined index: photo_x F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\07d091383187bbcebd79062686fef87c.php 第 35 行.
+NOTIC: [8] Undefined variable: page F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\07d091383187bbcebd79062686fef87c.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007730s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007774s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000604s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000643s ]
+
+[ 2017-10-27T17:50:16+08:00 ] ::1 /minifengshimy/index.php/Ht/Evaluate/add.html?id=1
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimy\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000720s ]
+NOTIC: [8] Undefined index: submit F:\phpStudy\WWW\minifengshimy\App\Ht\Controller\EvaluateController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `lr_evaluate` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `lr_evaluate` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 14 行.
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 14 行.
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 14 行.
+NOTIC: [2] Division by zero F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 14 行.
+NOTIC: [8] Undefined variable: id F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 72 行.
+NOTIC: [8] Undefined variable: page F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 72 行.
+NOTIC: [8] Undefined variable: type F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 72 行.
+NOTIC: [8] Undefined variable: name F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 72 行.
+NOTIC: [8] Undefined variable: shop_id F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 72 行.
+NOTIC: [8] Undefined variable: pro_allinfo F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 77 行.
+NOTIC: [8] Undefined variable: pro_allinfo F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 84 行.
+NOTIC: [8] Undefined variable: pro_allinfo F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 91 行.
+NOTIC: [8] Undefined variable: pro_allinfo F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 93 行.
+NOTIC: [8] Undefined variable: shangchang F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 99 行.
+NOTIC: [8] Undefined variable: pro_allinfo F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 100 行.
+NOTIC: [8] Undefined variable: pro_allinfo F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 108 行.
+NOTIC: [8] Undefined variable: pro_allinfo F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 114 行.
+NOTIC: [8] Undefined variable: pro_allinfo F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 120 行.
+NOTIC: [8] Undefined variable: pro_allinfo F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 126 行.
+NOTIC: [8] Undefined variable: cate_list F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 135 行.
+NOTIC: [8] Undefined variable: pro_allinfo F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 148 行.
+NOTIC: [8] Undefined variable: pro_allinfo F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 159 行.
+NOTIC: [8] Undefined variable: pro_allinfo F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 173 行.
+NOTIC: [8] Undefined variable: pro_allinfo F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 183 行.
+NOTIC: [8] Undefined variable: pro_allinfo F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 189 行.
+NOTIC: [8] Undefined variable: pro_allinfo F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 195 行.
+NOTIC: [8] Undefined variable: pro_allinfo F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 201 行.
+NOTIC: [8] Undefined variable: pro_allinfo F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 202 行.
+NOTIC: [8] Undefined variable: pro_allinfo F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 208 行.
+NOTIC: [8] Undefined variable: pro_allinfo F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 209 行.
+NOTIC: [8] Undefined variable: pro_allinfo F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 215 行.
+NOTIC: [8] Undefined variable: pro_allinfo F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 221 行.
+NOTIC: [8] Undefined variable: pro_allinfo F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 227 行.
+NOTIC: [8] Undefined variable: pro_allinfo F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 232 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010920s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010969s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000456s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001201s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001263s ]
+
+[ 2017-10-27T17:54:15+08:00 ] ::1 /minifengshimy/index.php/Ht/Evaluate/add.html?id=1
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimy\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000995s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001056s ]
+NOTIC: [8] Undefined index: submit F:\phpStudy\WWW\minifengshimy\App\Ht\Controller\EvaluateController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `lr_evaluate` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `lr_evaluate` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 14 行.
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 14 行.
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 14 行.
+NOTIC: [2] Division by zero F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 14 行.
+NOTIC: [8] Undefined variable: id F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 72 行.
+NOTIC: [8] Undefined variable: pro_allinfo F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 101 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010676s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010729s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000783s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000845s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000957s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001017s ]
+
+[ 2017-10-27T17:55:30+08:00 ] ::1 /minifengshimy/index.php/Ht/Evaluate/add.html?id=1
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimy\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000654s ]
+NOTIC: [8] Undefined index: submit F:\phpStudy\WWW\minifengshimy\App\Ht\Controller\EvaluateController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `lr_evaluate` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `lr_evaluate` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 14 行.
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 14 行.
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 14 行.
+NOTIC: [2] Division by zero F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 14 行.
+NOTIC: [8] Undefined variable: id F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 72 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007726s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007768s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000411s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000597s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000635s ]
+
+[ 2017-10-27T17:58:18+08:00 ] ::1 /minifengshimy/index.php/Ht/Evaluate/index.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimy\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000760s ]
+SQL: SHOW COLUMNS FROM `lr_evaluate` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `lr_evaluate`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+NOTIC: [8] Undefined index: photo_x F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\07d091383187bbcebd79062686fef87c.php 第 35 行.
+NOTIC: [8] Undefined index: photo_x F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\07d091383187bbcebd79062686fef87c.php 第 35 行.
+NOTIC: [8] Undefined index: photo_x F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\07d091383187bbcebd79062686fef87c.php 第 35 行.
+NOTIC: [8] Undefined variable: page F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\07d091383187bbcebd79062686fef87c.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008977s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009024s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000486s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000695s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000738s ]
+
+[ 2017-10-27T17:58:19+08:00 ] ::1 /minifengshimy/index.php/Ht/Evaluate/add.html?id=1
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimy\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000652s ]
+NOTIC: [8] Undefined index: submit F:\phpStudy\WWW\minifengshimy\App\Ht\Controller\EvaluateController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `lr_evaluate` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `lr_evaluate` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 14 行.
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 14 行.
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 14 行.
+NOTIC: [2] Division by zero F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 14 行.
+NOTIC: [8] Undefined variable: id F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 72 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008125s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008171s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000488s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000620s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000658s ]
+
+[ 2017-10-27T17:58:23+08:00 ] ::1 /minifengshimy/index.php/Ht/Evaluate/add.html?id=
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimy\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000966s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001048s ]
+SQL: SHOW COLUMNS FROM `lr_evaluate` [ RunTime:0.0036s ]
+SQL: UPDATE `lr_evaluate` SET `name`='类风湿关节炎评估介绍',`intro`='ahakshkuahs' WHERE ( id=1 ) [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029828s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029898s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000484s ]
+
+[ 2017-10-27T17:58:25+08:00 ] ::1 /minifengshimy/index.php/Ht/Evaluate/index
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimy\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000827s ]
+SQL: SHOW COLUMNS FROM `lr_evaluate` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `lr_evaluate`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+NOTIC: [8] Undefined index: photo_x F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\07d091383187bbcebd79062686fef87c.php 第 35 行.
+NOTIC: [8] Undefined index: photo_x F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\07d091383187bbcebd79062686fef87c.php 第 35 行.
+NOTIC: [8] Undefined index: photo_x F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\07d091383187bbcebd79062686fef87c.php 第 35 行.
+NOTIC: [8] Undefined variable: page F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\07d091383187bbcebd79062686fef87c.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015817s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015874s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000754s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000802s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000794s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000838s ]
+
+[ 2017-10-27T17:58:27+08:00 ] ::1 /minifengshimy/index.php/Ht/Evaluate/add.html?id=1
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimy\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000774s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000844s ]
+NOTIC: [8] Undefined index: submit F:\phpStudy\WWW\minifengshimy\App\Ht\Controller\EvaluateController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `lr_evaluate` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `lr_evaluate` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 14 行.
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 14 行.
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 14 行.
+NOTIC: [2] Division by zero F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 14 行.
+NOTIC: [8] Undefined variable: id F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 72 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010226s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010294s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000797s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000852s ]
+
+[ 2017-10-27T17:58:36+08:00 ] ::1 /minifengshimy/index.php/Ht/Evaluate/add.html?id=
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimy\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000798s ]
+NOTIC: [8] Use of undefined constant Ymd - assumed 'Ymd' F:\phpStudy\WWW\minifengshimy\App\Ht\Controller\EvaluateController.class.php 第 28 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\phpStudy\WWW\minifengshimy\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `lr_evaluate` [ RunTime:0.0037s ]
+SQL: SELECT `photo` FROM `lr_evaluate` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `lr_evaluate` SET `name`='类风湿关节炎评估介绍',`intro`='ahakshkuahs',`photo`='UploadFiles/evaluate/20171027/1509098316386367.jpg' WHERE ( id=1 ) [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009853s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009918s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000796s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000838s ]
+
+[ 2017-10-27T17:58:37+08:00 ] ::1 /minifengshimy/index.php/Ht/Evaluate/index
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimy\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001008s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001085s ]
+SQL: SHOW COLUMNS FROM `lr_evaluate` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `lr_evaluate`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+NOTIC: [8] Undefined index: photo_x F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\07d091383187bbcebd79062686fef87c.php 第 35 行.
+NOTIC: [8] Undefined index: photo_x F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\07d091383187bbcebd79062686fef87c.php 第 35 行.
+NOTIC: [8] Undefined index: photo_x F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\07d091383187bbcebd79062686fef87c.php 第 35 行.
+NOTIC: [8] Undefined variable: page F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\07d091383187bbcebd79062686fef87c.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015868s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000881s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000937s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001220s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001271s ]
+
+[ 2017-10-27T17:58:38+08:00 ] ::1 /minifengshimy/index.php/Ht/Evaluate/add.html?id=1
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimy\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001119s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001186s ]
+NOTIC: [8] Undefined index: submit F:\phpStudy\WWW\minifengshimy\App\Ht\Controller\EvaluateController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `lr_evaluate` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `lr_evaluate` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 14 行.
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 14 行.
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 14 行.
+NOTIC: [2] Division by zero F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 14 行.
+NOTIC: [8] Undefined variable: id F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 72 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010513s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010573s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000799s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000845s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000909s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000954s ]
+
+[ 2017-10-27T17:59:10+08:00 ] ::1 /minifengshimy/index.php/Ht/Evaluate/add.html?id=
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimy\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000877s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000943s ]
+SQL: SHOW COLUMNS FROM `lr_evaluate` [ RunTime:0.0084s ]
+SQL: UPDATE `lr_evaluate` SET `name`='类风湿关节炎评估介绍',`intro`='类风湿关节炎评估介绍类风湿关节炎评估介绍类风湿关节炎评估介绍类风湿关节炎评估介绍类风湿关节炎评估介绍类风湿关节炎评估介绍类风湿关节炎评估介绍类风湿关节炎评估介绍类风湿关节炎评估介绍类风湿关节炎评估介绍类风湿关节炎评估介绍类风湿关节炎评估介绍类风湿关节炎评估介绍类风湿关节炎评估介绍' WHERE ( id=1 ) [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009403s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009464s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000653s ]
+
+[ 2017-10-27T17:59:11+08:00 ] ::1 /minifengshimy/index.php/Ht/Evaluate/index
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimy\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003823s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003978s ]
+SQL: SHOW COLUMNS FROM `lr_evaluate` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `lr_evaluate`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+NOTIC: [8] Undefined index: photo_x F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\07d091383187bbcebd79062686fef87c.php 第 35 行.
+NOTIC: [8] Undefined index: photo_x F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\07d091383187bbcebd79062686fef87c.php 第 35 行.
+NOTIC: [8] Undefined index: photo_x F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\07d091383187bbcebd79062686fef87c.php 第 35 行.
+NOTIC: [8] Undefined variable: page F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\07d091383187bbcebd79062686fef87c.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020070s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020125s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000651s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000807s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000849s ]
+
+[ 2017-10-27T17:59:13+08:00 ] ::1 /minifengshimy/index.php/Ht/Evaluate/add.html?id=1
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimy\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001213s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001317s ]
+NOTIC: [8] Undefined index: submit F:\phpStudy\WWW\minifengshimy\App\Ht\Controller\EvaluateController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `lr_evaluate` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `lr_evaluate` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 14 行.
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 14 行.
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 14 行.
+NOTIC: [2] Division by zero F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 14 行.
+NOTIC: [8] Undefined variable: id F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 72 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009227s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009282s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000678s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000722s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000864s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000908s ]
+
+[ 2017-10-27T17:59:15+08:00 ] ::1 /minifengshimy/index.php/Ht/Evaluate/index.html
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimy\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000870s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000933s ]
+SQL: SHOW COLUMNS FROM `lr_evaluate` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `lr_evaluate`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+NOTIC: [8] Undefined index: photo_x F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\07d091383187bbcebd79062686fef87c.php 第 35 行.
+NOTIC: [8] Undefined index: photo_x F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\07d091383187bbcebd79062686fef87c.php 第 35 行.
+NOTIC: [8] Undefined index: photo_x F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\07d091383187bbcebd79062686fef87c.php 第 35 行.
+NOTIC: [8] Undefined variable: page F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\07d091383187bbcebd79062686fef87c.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009646s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009701s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000639s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000679s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000913s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000966s ]
+
+[ 2017-10-27T17:59:17+08:00 ] ::1 /minifengshimy/index.php/Ht/Evaluate/add.html?id=2
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimy\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000869s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000931s ]
+NOTIC: [8] Undefined index: submit F:\phpStudy\WWW\minifengshimy\App\Ht\Controller\EvaluateController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `lr_evaluate` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `lr_evaluate` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 14 行.
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 14 行.
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 14 行.
+NOTIC: [2] Division by zero F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 14 行.
+NOTIC: [8] Undefined variable: id F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 72 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011302s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011355s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000725s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001072s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001121s ]
+
+[ 2017-10-27T17:59:25+08:00 ] ::1 /minifengshimy/index.php/Ht/Evaluate/add.html?id=
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimy\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000798s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000851s ]
+NOTIC: [8] Use of undefined constant Ymd - assumed 'Ymd' F:\phpStudy\WWW\minifengshimy\App\Ht\Controller\EvaluateController.class.php 第 28 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\phpStudy\WWW\minifengshimy\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `lr_evaluate` [ RunTime:0.0040s ]
+SQL: SELECT `photo` FROM `lr_evaluate` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `lr_evaluate` SET `name`='健康调查简表（SF-36）介绍',`intro`='健康调查简表（SF-36）介绍健康调查简表（SF-36）介绍健康调查简表（SF-36）介绍健康调查简表（SF-36）介绍健康调查简表（SF-36）介绍健康调查简表（SF-36）介绍',`photo`='UploadFiles/evaluate/20171027/1509098365573816.jpg' WHERE ( id=2 ) [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008750s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008832s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000860s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000933s ]
+
+[ 2017-10-27T17:59:26+08:00 ] ::1 /minifengshimy/index.php/Ht/Evaluate/index
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimy\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002486s ]
+SQL: SHOW COLUMNS FROM `lr_evaluate` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `lr_evaluate`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000249s ]
+NOTIC: [8] Undefined index: photo_x F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\07d091383187bbcebd79062686fef87c.php 第 35 行.
+NOTIC: [8] Undefined index: photo_x F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\07d091383187bbcebd79062686fef87c.php 第 35 行.
+NOTIC: [8] Undefined index: photo_x F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\07d091383187bbcebd79062686fef87c.php 第 35 行.
+NOTIC: [8] Undefined variable: page F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\07d091383187bbcebd79062686fef87c.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014536s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014588s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000790s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000840s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000959s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001006s ]
+
+[ 2017-10-27T17:59:27+08:00 ] ::1 /minifengshimy/index.php/Ht/Evaluate/add.html?id=3
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimy\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000066s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000838s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000891s ]
+NOTIC: [8] Undefined index: submit F:\phpStudy\WWW\minifengshimy\App\Ht\Controller\EvaluateController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `lr_evaluate` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `lr_evaluate` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 14 行.
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 14 行.
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 14 行.
+NOTIC: [2] Division by zero F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 14 行.
+NOTIC: [8] Undefined variable: id F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 72 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009274s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009329s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000777s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000835s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001494s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001556s ]
+
+[ 2017-10-27T17:59:33+08:00 ] ::1 /minifengshimy/index.php/Ht/Evaluate/add.html?id=
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimy\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000822s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000880s ]
+NOTIC: [8] Use of undefined constant Ymd - assumed 'Ymd' F:\phpStudy\WWW\minifengshimy\App\Ht\Controller\EvaluateController.class.php 第 28 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given F:\phpStudy\WWW\minifengshimy\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `lr_evaluate` [ RunTime:0.0036s ]
+SQL: SELECT `photo` FROM `lr_evaluate` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `lr_evaluate` SET `name`='医院焦虑抑郁量表评估',`intro`='医院焦虑抑郁量表评估医院焦虑抑郁量表评估医院焦虑抑郁量表评估医院焦虑抑郁量表评估医院焦虑抑郁量表评估',`photo`='UploadFiles/evaluate/20171027/1509098373452024.jpg' WHERE ( id=3 ) [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007709s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007768s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000626s ]
+
+[ 2017-10-27T17:59:34+08:00 ] ::1 /minifengshimy/index.php/Ht/Evaluate/index
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimy\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000144s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001240s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001322s ]
+SQL: SHOW COLUMNS FROM `lr_evaluate` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `lr_evaluate`  [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+NOTIC: [8] Undefined index: photo_x F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\07d091383187bbcebd79062686fef87c.php 第 35 行.
+NOTIC: [8] Undefined index: photo_x F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\07d091383187bbcebd79062686fef87c.php 第 35 行.
+NOTIC: [8] Undefined index: photo_x F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\07d091383187bbcebd79062686fef87c.php 第 35 行.
+NOTIC: [8] Undefined variable: page F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\07d091383187bbcebd79062686fef87c.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013640s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013698s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001464s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001632s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003702s ]
+
+[ 2017-10-27T18:07:23+08:00 ] ::1 /minifengshimy/index.php/Ht/Evaluate/add.html?id=1
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimy\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000990s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001064s ]
+NOTIC: [8] Undefined index: submit F:\phpStudy\WWW\minifengshimy\App\Ht\Controller\EvaluateController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `lr_evaluate` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `lr_evaluate` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 14 行.
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 14 行.
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 14 行.
+NOTIC: [2] Division by zero F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 14 行.
+NOTIC: [8] Undefined variable: id F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 72 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008733s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008792s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000639s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001003s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001057s ]
+
+[ 2017-10-27T18:09:04+08:00 ] ::1 /minifengshimy/index.php/Ht/Evaluate/add.html?id=1
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimy\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000879s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000934s ]
+NOTIC: [8] Undefined index: submit F:\phpStudy\WWW\minifengshimy\App\Ht\Controller\EvaluateController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `lr_evaluate` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `lr_evaluate` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 14 行.
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 14 行.
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 14 行.
+NOTIC: [2] Division by zero F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 14 行.
+NOTIC: [8] Undefined variable: id F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 72 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009339s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009407s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000693s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000735s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000869s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000914s ]
+
+[ 2017-10-27T18:09:17+08:00 ] ::1 /minifengshimy/index.php/Ht/Evaluate/add.html?id=1
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimy\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000844s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000905s ]
+NOTIC: [8] Undefined index: submit F:\phpStudy\WWW\minifengshimy\App\Ht\Controller\EvaluateController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `lr_evaluate` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `lr_evaluate` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 14 行.
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 14 行.
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 14 行.
+NOTIC: [2] Division by zero F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 14 行.
+NOTIC: [8] Undefined variable: id F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 72 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009872s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009940s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000573s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000611s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000821s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000864s ]
+
+[ 2017-10-27T18:09:24+08:00 ] ::1 /minifengshimy/index.php/Ht/Evaluate/add.html?id=1
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimy\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000833s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000889s ]
+NOTIC: [8] Undefined index: submit F:\phpStudy\WWW\minifengshimy\App\Ht\Controller\EvaluateController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `lr_evaluate` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `lr_evaluate` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 14 行.
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 14 行.
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 14 行.
+NOTIC: [2] Division by zero F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 14 行.
+NOTIC: [8] Undefined variable: id F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 72 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008299s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008357s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000604s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000641s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000805s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000845s ]
+
+[ 2017-10-27T18:09:36+08:00 ] ::1 /minifengshimy/index.php/Ht/Evaluate/add.html?id=1
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimy\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000944s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001008s ]
+NOTIC: [8] Undefined index: submit F:\phpStudy\WWW\minifengshimy\App\Ht\Controller\EvaluateController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `lr_evaluate` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `lr_evaluate` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 14 行.
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 14 行.
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 14 行.
+NOTIC: [2] Division by zero F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 14 行.
+NOTIC: [8] Undefined variable: id F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\c5aa697624aea9009092fe10d42d9a1f.php 第 72 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008667s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008733s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000628s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000889s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000939s ]
+
