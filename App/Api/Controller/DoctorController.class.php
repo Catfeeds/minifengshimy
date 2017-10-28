@@ -524,4 +524,76 @@ class DoctorController extends PublicController {
         }
     }
 
+    //医生的咨询信息
+    public function content_list(){
+        $uid = intval($_REQUEST['uid']);
+        if(!$uid){
+            echo json_encode(array('status'=>0,'err'=>'网络异常！'));
+            exit();
+        }
+        $docid = M('doctor')->where('uid='.$uid)->getField('id');
+        $list = M('content')->where('reply_content is null')->select();
+        if($list){
+            foreach($list as $k => $v){
+                $list[$k]['addtime'] = date('Y-m-d H:i',$v['addtime']);
+                $list[$k]['name'] = M('user')->where('id='.intval($v['uid']))->getField('truename');
+                if(!$list[$k]['name']){
+                     $list[$k]['name'] = M('user')->where('id='.intval($v['uid']))->getField('uname');
+                }
+            }
+        }
+        $list2 = M('content')->where('reply_content!=""')->select();
+        $num = 0;
+        if($list2){
+            foreach($list2 as $k => $v){
+                $num++;
+                $list2[$k]['addtime'] = date('Y-m-d H:i',$v['addtime']);
+                 $list2[$k]['name'] = M('user')->where('id='.intval($v['uid']))->getField('truename');
+                if(!$list2[$k]['name']){
+                     $list2[$k]['name'] = M('user')->where('id='.intval($v['uid']))->getField('uname');
+                }
+            }
+        }
+        echo json_encode(array('status'=>1,'list'=>$list,'list2'=>$list2,'num'=>$num));
+        exit();
+    }
+
+    //咨询内容详情
+    public function content_detail(){
+        $id = intval($_REQUEST['id']);
+        if(!$id){
+            echo json_encode(array('status'=>0,'err'=>'数据异常！'));
+            exit();
+        }
+        $info = M('content')->where('id='.$id)->find();
+        $info['addtime'] = date("Y-m-d H:i",$info['addtime']);
+        $info['reply_addtime'] = date("Y-m-d H:i",$info['reply_addtime']);
+        $info['doc_photo'] = __DATAURL__.M('doctor')->where('id='.intval($info['docid']))->getField('photo_x');
+        $info['name'] = M('user')->where('id='.intval($info['uid']))->getField('truename');
+        if(!$info['name']){
+             $info['name'] = M('user')->where('id='.intval($info['uid']))->getField('uname');
+        }
+        echo json_encode(array('status'=>1,'info'=>$info));
+        exit();
+    }
+
+    //回复咨询
+    public function reply_content(){
+        $id = intval($_REQUEST['id']);
+        if(!$id){
+            echo json_encode(array('status'=>0,'err'=>'数据异常！'));
+            exit();
+        }
+        $data['reply_addtime'] = time();
+        $data['reply_content'] = $_REQUEST['reply_content'];
+        $res = M('content')->where('id='.$id)->save($data);
+        if($res){
+            echo json_encode(array('status'=>1,'err'=>'回复成功！'));
+            exit();
+        }else{
+            echo json_encode(array('status'=>0,'err'=>'回复失败！'));
+            exit();
+        }
+    }
+
 }

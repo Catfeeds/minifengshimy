@@ -676,8 +676,14 @@ class UserController extends PublicController {
         }
         $docid = intval($_REQUEST['docid']);
         $res = M('order')->where('uid='.$uid.' AND docid='.$docid.' AND status=40')->find();
+        $zi_list = M('content')->where('uid='.$uid.' AND docid='.$docid)->select();
+        if($zi_list){
+        	foreach($zi_list as $k => $v){
+        		$zi_list[$k]['addtime'] = date("Y-m-d H:i",$v['addtime']);
+        	}
+        }
         if($res){
-        	echo json_encode(array('status'=>1,'is_buy'=>1));
+        	echo json_encode(array('status'=>1,'is_buy'=>1,'zi_list'=>$zi_list));
 			exit();
         }else{
         	echo json_encode(array('status'=>0,'is_buy'=>0));
@@ -707,6 +713,78 @@ class UserController extends PublicController {
         	$list[$k]['doctor'] = M('doctor')->where('id='.intval($v['docid']))->getField('name');
         }
         echo json_encode(array('status'=>1,'list'=>$list));
+        exit();
+	}
+
+	//检测患者是否有评估和检验报告
+	public function check_user(){
+		$uid = intval($_REQUEST['uid']);
+        if(!$uid){
+            echo json_encode(array('status'=>0,'err'=>'网络异常！'));
+            exit();
+        }
+        $res = M('guan_evaluate')->where('uid='.$uid)->select();
+        $evaluate = 0;
+        if($res){
+        	$evaluate = 1;
+        }
+        $res2 = M('report')->where('uid='.$uid)->select();
+        $report = 0;
+        if($res2){
+        	$report = 1;
+        }
+        $res3 = M('medicine')->where('uid='.$uid)->select();
+        $medicine = 0;
+        if($res3){
+        	$medicine = 1;
+        }
+        echo json_encode(array('status'=>1,'evaluate'=>$evaluate,'report'=>$report,'medicine'=>$medicine));
+        exit();
+	}
+
+	//患者咨询
+	public function send_content(){
+		$uid = intval($_REQUEST['uid']);
+        if(!$uid){
+            echo json_encode(array('status'=>0,'err'=>'网络异常！'));
+            exit();
+        }
+        $docid = intval($_REQUEST['docid']);
+        if(!$docid){
+            echo json_encode(array('status'=>0,'err'=>'医生信息异常！'));
+            exit();
+        }
+        $content = $_REQUEST['content'];
+        if(!$content){
+            echo json_encode(array('status'=>0,'err'=>'请填写咨询内容！'));
+            exit();
+        }
+        $data['uid'] = $uid;
+        $data['docid'] = $docid;
+        $data['content'] = $content;
+        $data['addtime'] = time();
+        $res = M('content')->add($data);
+        if($res){
+        	echo json_encode(array('status'=>1,'err'=>'提交成功！'));
+            exit();
+        }else{
+        	echo json_encode(array('status'=>0,'err'=>'提交失败！'));
+            exit();
+        }
+	}
+
+	//咨询内容详情
+	public function content_detail(){
+		$id = intval($_REQUEST['id']);
+        if(!$id){
+            echo json_encode(array('status'=>0,'err'=>'数据异常！'));
+            exit();
+        }
+        $info = M('content')->where('id='.$id)->find();
+        $info['addtime'] = date("Y-m-d H:i",$info['addtime']);
+        $info['reply_addtime'] = date("Y-m-d H:i",$info['reply_addtime']);
+        $info['doc_photo'] = __DATAURL__.M('doctor')->where('id='.intval($info['docid']))->getField('photo_x');
+        echo json_encode(array('status'=>1,'info'=>$info));
         exit();
 	}
 
