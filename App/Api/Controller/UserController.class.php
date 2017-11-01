@@ -788,4 +788,104 @@ class UserController extends PublicController {
         exit();
 	}
 
+	//***************************
+    //   上传图片
+    //***************************
+    public function uploaduserimg(){
+        $info = $this->upload_images($_FILES['data'],array('jpg','png','jpeg'),"user/".date(Ymd));
+        if(is_array($info)) {// 上传错误提示错误信息
+            $url = 'UploadFiles/'.$info['savepath'].$info['savename'];
+            if ($_REQUEST['imgurl']) {
+                $img_url = "Data/".$_REQUEST['imgurl'];
+                if(file_exists($img_url)) {
+                    @unlink($img_url);
+                }
+            }
+            echo $url;
+            exit();
+        }else{
+            echo json_encode(array('status'=>0,'err'=>$info));
+            exit();
+        }
+    }
+
+    //更新数据库
+    public function saveImg(){
+        $uid = intval($_REQUEST['uid']);
+        if(!$uid){
+            echo json_encode(array('status'=>0,'err'=>'网络异常！'));
+            exit();
+        }
+        $photo_x = $_REQUEST['photo_x'];
+        $data['photo_x'] = $photo_x;
+        $res = M('user')->where('id='.$uid)->save($data);
+        if($res){
+            echo json_encode(array('status'=>1,'err'=>'修改成功！'));
+            exit();
+        }else{
+            echo json_encode(array('status'=>0,'err'=>'修改失败！'));
+            exit();
+        }
+    }
+
+    //更新个人信息
+    public function saveuserinfo(){
+    	$uid = intval($_REQUEST['uid']);
+        if(!$uid){
+            echo json_encode(array('status'=>0,'err'=>'网络异常！'));
+            exit();
+        }
+        $data = array();
+        $data['uname'] = $_REQUEST['uname'];
+        $data['birthday'] = $_REQUEST['birthday'];
+        $data['id_cart'] = $_REQUEST['id_cart'];
+        $data['city'] = $_REQUEST['city'];
+        $data['jibing'] = $_REQUEST['jibing'];
+        $data['que_zhen'] = $_REQUEST['que_zhen'];
+        if($_REQUEST['sex']=='未设置'){
+        	$data['sex'] = 0;
+        }else if($_REQUEST['sex']=='男'){
+        	$data['sex'] = 1;
+        }else if($_REQUEST['sex']=='女'){
+        	$data['sex'] = 2;
+        }
+        if($_REQUEST['jiu_zhen']=='未设置'){
+        	$data['jiu_zhen'] = 0;
+        }else if($_REQUEST['jiu_zhen']=='是'){
+        	$data['jiu_zhen'] = 1;
+        }else if($_REQUEST['jiu_zhen']=='否'){
+        	$data['jiu_zhen'] = 2;
+        }
+        $res = M('user')->where('id='.$uid)->save($data);
+        if($res){
+        	echo json_encode(array('status'=>1,'err'=>'修改成功！'));
+            exit();
+        }else{
+        	echo json_encode(array('status'=>1,'err'=>'修改成功！'));
+            exit();
+        }
+
+    }
+
+    //获取用户信息
+    public function getuserinfo(){
+    	$uid = intval($_REQUEST['uid']);
+        if(!$uid){
+            echo json_encode(array('status'=>0,'err'=>'网络异常！'));
+            exit();
+        }
+        $info =  M('user')->where('id='.$uid)->find();
+        $info['photo_x'] = __DATAURL__.$info['photo_x'];
+        if($info['sex']==0){
+        	$info['sex_name'] = '未设置';
+        }else if($info['sex']==1){
+        	$info['sex_name'] = '男';
+        }else if($info['sex']==2){
+        	$info['sex_name'] = '女';
+        }
+        echo json_encode(array('status'=>1,'info'=>$info));
+        exit();
+    }
+
+
 }

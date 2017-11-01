@@ -1,0 +1,90 @@
+[ 2017-11-01T10:16:21+08:00 ] ::1 /minifengshimy/index.php/Ht/Doctor/user.html?type=xz
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimy\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000887s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000975s ]
+NOTIC: [8] Undefined index: id F:\phpStudy\WWW\minifengshimy\App\Ht\Controller\DoctorController.class.php 第 332 行.
+NOTIC: [8] Undefined index: tel F:\phpStudy\WWW\minifengshimy\App\Ht\Controller\DoctorController.class.php 第 333 行.
+NOTIC: [8] Undefined index: name F:\phpStudy\WWW\minifengshimy\App\Ht\Controller\DoctorController.class.php 第 334 行.
+NOTIC: [8] Undefined index: name F:\phpStudy\WWW\minifengshimy\App\Ht\Controller\DoctorController.class.php 第 336 行.
+SQL: SHOW COLUMNS FROM `lr_user` [ RunTime:0.0033s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lr_user` WHERE ( 1=1 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: page F:\phpStudy\WWW\minifengshimy\App\Ht\Controller\DoctorController.class.php 第 346 行.
+SQL: SELECT * FROM `lr_user` WHERE ( 1=1 ) ORDER BY id desc LIMIT 0,20000   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013585s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013641s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000498s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000742s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000786s ]
+
+[ 2017-11-01T10:16:28+08:00 ] ::1 /minifengshimy/index.php/Ht/Doctor/add.html?id=8&page=0&type=&name=&shop_id=
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimy\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000676s ]
+NOTIC: [8] Undefined index: shop_id F:\phpStudy\WWW\minifengshimy\App\Ht\Controller\DoctorController.class.php 第 82 行.
+NOTIC: [8] Undefined index: sort F:\phpStudy\WWW\minifengshimy\App\Ht\Controller\DoctorController.class.php 第 84 行.
+NOTIC: [8] Undefined index: is_yu F:\phpStudy\WWW\minifengshimy\App\Ht\Controller\DoctorController.class.php 第 89 行.
+NOTIC: [8] Undefined index: is_online F:\phpStudy\WWW\minifengshimy\App\Ht\Controller\DoctorController.class.php 第 90 行.
+NOTIC: [8] Undefined index: renqi F:\phpStudy\WWW\minifengshimy\App\Ht\Controller\DoctorController.class.php 第 92 行.
+SQL: SHOW COLUMNS FROM `lr_doctor` [ RunTime:0.0063s ]
+SQL: UPDATE `lr_doctor` SET `name`='LeeFon',`uid`='1',`password`='123456',`hospital`='银河医院',`position`='全能医生',`cztime`='周六',`price`='8',`cid`='2',`sort`='0',`updatetime`='1509502588',`digest`='该医生是一个全能的医生，就问你服不服',`zyjy`='毫无经验，吹咩，哈哈哈',`tel`='18845210365',`is_yu`='0',`is_online`='0',`service`='男科、女科',`renqi`='0' WHERE ( id=8 ) [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016795s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016863s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000581s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000626s ]
+
+[ 2017-11-01T10:16:29+08:00 ] ::1 /minifengshimy/index.php/Ht/Doctor/add.html?id=8&page=0&name=&shop_id=0&tuijian=
+NOTIC: [8] Use of undefined constant SHOW_PAGE_TRACE - assumed 'SHOW_PAGE_TRACE' F:\phpStudy\WWW\minifengshimy\App\Common\Conf\debug.php 第 4 行.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000702s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000771s ]
+NOTIC: [8] Undefined index: type F:\phpStudy\WWW\minifengshimy\App\Ht\Controller\DoctorController.class.php 第 68 行.
+NOTIC: [8] Undefined index: submit F:\phpStudy\WWW\minifengshimy\App\Ht\Controller\DoctorController.class.php 第 70 行.
+SQL: SHOW COLUMNS FROM `lr_doctor_cat` [ RunTime:0.0076s ]
+SQL: SELECT `id`,`name` FROM `lr_doctor_cat` WHERE ( del=0 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lr_doctor` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `lr_doctor` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `lr_user` [ RunTime:0.0052s ]
+SQL: SELECT `name` FROM `lr_user` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0014s ]
+NOTIC: [8] Undefined variable: shop_id F:\phpStudy\WWW\minifengshimy\App\Ht\Controller\DoctorController.class.php 第 207 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000651s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000730s ]
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\2223f41ac69bcc4f65acac544a0ae8c2.php 第 14 行.
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\2223f41ac69bcc4f65acac544a0ae8c2.php 第 14 行.
+NOTIC: [8] Undefined variable: img F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\2223f41ac69bcc4f65acac544a0ae8c2.php 第 14 行.
+NOTIC: [2] Division by zero F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\2223f41ac69bcc4f65acac544a0ae8c2.php 第 14 行.
+NOTIC: [8] Undefined variable: shangchang F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\2223f41ac69bcc4f65acac544a0ae8c2.php 第 99 行.
+NOTIC: [8] Undefined index: shop_id F:\phpStudy\WWW\minifengshimy\App\Runtime\Cache\Ht\2223f41ac69bcc4f65acac544a0ae8c2.php 第 100 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018589s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018749s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000853s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000901s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000762s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000828s ]
+

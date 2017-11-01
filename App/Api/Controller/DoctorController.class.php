@@ -537,6 +537,10 @@ class DoctorController extends PublicController {
             foreach($list as $k => $v){
                 $list[$k]['addtime'] = date('Y-m-d H:i',$v['addtime']);
                 $list[$k]['name'] = M('user')->where('id='.intval($v['uid']))->getField('truename');
+                $photo_x = M('user')->where('id='.intval($v['uid']))->getField('photo_x');
+                if($photo_x){
+                    $list[$k]['photo_x'] = __DATAURL__.$photo_x;
+                }
                 if(!$list[$k]['name']){
                      $list[$k]['name'] = M('user')->where('id='.intval($v['uid']))->getField('uname');
                 }
@@ -549,6 +553,10 @@ class DoctorController extends PublicController {
                 $num++;
                 $list2[$k]['addtime'] = date('Y-m-d H:i',$v['addtime']);
                  $list2[$k]['name'] = M('user')->where('id='.intval($v['uid']))->getField('truename');
+                $photo_x = M('user')->where('id='.intval($v['uid']))->getField('photo_x');
+                if($photo_x){
+                    $list2[$k]['photo_x'] = __DATAURL__.$photo_x;
+                }
                 if(!$list2[$k]['name']){
                      $list2[$k]['name'] = M('user')->where('id='.intval($v['uid']))->getField('uname');
                 }
@@ -573,6 +581,11 @@ class DoctorController extends PublicController {
         if(!$info['name']){
              $info['name'] = M('user')->where('id='.intval($info['uid']))->getField('uname');
         }
+        $user_photo = M('user')->where('id='.intval($info['uid']))->getField('photo_x');
+        if($user_photo){
+            $info['user_photo'] = __DATAURL__.$user_photo;
+        }
+        
         echo json_encode(array('status'=>1,'info'=>$info));
         exit();
     }
@@ -594,6 +607,150 @@ class DoctorController extends PublicController {
             echo json_encode(array('status'=>0,'err'=>'回复失败！'));
             exit();
         }
+    }
+
+    //患者列表
+    public function patient_list(){
+        $uid = intval($_REQUEST['uid']);
+        if(!$uid){
+            echo json_encode(array('status'=>0,'err'=>'网络异常！'));
+            exit();
+        }
+        $docid = M('doctor')->where('uid='.$uid)->getField('id');
+        $user_id = M('order')->where('docid='.intval($docid))->field('uid')->select();
+        if(!$user_id){
+            echo json_encode(array('status'=>0,'err'=>'暂无数据！'));
+            exit();
+        }
+        $list = array();
+        foreach($user_id as $k => $v){
+            $temp = M('user')->where('id='.intval($v))->find();
+            if($temp['photo_x']){
+                $temp['photo_x'] = __DATAURL__.$temp['photo_x'];
+            }
+            if($temp['sex']==0){
+                $temp['sex_name'] = '未知';
+            }else if($temp['sex']==1){
+                $temp['sex_name'] = '男';
+            }else if($temp['sex']==2){
+                $temp['sex_name'] = '女';
+            }
+            $temp['age'] = intval(date('Y',time()) - substr($temp['birthday'],0,4));
+            $city = explode(',',$temp['city']);
+            $temp['city'] = $city[1];
+            $temp['bingcheng'] = intval(date('Y',time()) - substr($temp['que_zhen'],0,4));
+            if(!$temp['bingcheng']){
+                $temp['bingcheng'] = 1;
+            }
+            array_push($list,$temp);
+        }
+        echo json_encode(array('status'=>1,'list'=>$list));
+        exit();
+    }
+
+     //患者详情
+    public function patient_detail(){
+        $id = intval($_REQUEST['id']);
+        if(!$id){
+            echo json_encode(array('status'=>0,'err'=>'网络异常！'));
+            exit();
+        }
+        $info = M('user')->where('id='.intval($id))->find();
+        if($info['photo_x']){
+            $info['photo_x'] = __DATAURL__.$info['photo_x'];
+        }
+        if($info['sex']==0){
+            $info['sex_name'] = '未知';
+        }else if($info['sex']==1){
+            $info['sex_name'] = '男';
+        }else if($info['sex']==2){
+            $info['sex_name'] = '女';
+        }
+        $info['age'] = intval(date('Y',time()) - substr($info['birthday'],0,4));
+        $city = explode(',',$info['city']);
+        $info['city'] = $city[1];
+        $info['bingcheng'] = intval(date('Y',time()) - substr($info['que_zhen'],0,4));
+        if(!$info['bingcheng']){
+            $info['bingcheng'] = 1;
+        }
+        echo json_encode(array('status'=>1,'info'=>$info));
+        exit();
+    }
+
+    //医生给患者发信息
+    public function sendMessage(){
+        $docid = intval($_REQUEST['docid']);
+        if(!$docid){
+            echo json_encode(array('status'=>0,'err'=>'网络异常！'));
+            exit();
+        }
+        $docid = intval(M('doctor')->where('uid='.$docid)->getField('id'));
+        $uid = intval($_REQUEST['uid']);
+        if(!$uid){
+            echo json_encode(array('status'=>0,'err'=>'网络异常！'));
+            exit();
+        }
+        $data['docid'] = $docid;
+        $data['uid'] = $uid;
+        $data['reply_content'] = $_REQUEST['reply_content'];
+        $data['reply_addtime'] = time();
+        $res = M('content')->add($data);
+        if($res){
+            echo json_encode(array('status'=>1,'err'=>'发送成功！'));
+            exit();
+        }else{
+            echo json_encode(array('status'=>0,'err'=>'发送失败！'));
+            exit();
+        }
+    }
+
+     //获取医生给患者发的信息
+    public function getMessage(){
+        $docid = intval($_REQUEST['docid']);
+        if(!$docid){
+            echo json_encode(array('status'=>0,'err'=>'网络异常！'));
+            exit();
+        }
+        $docid = intval(M('doctor')->where('uid='.$docid)->getField('id'));
+        $uid = intval($_REQUEST['uid']);
+        if(!$uid){
+            echo json_encode(array('status'=>0,'err'=>'网络异常！'));
+            exit();
+        }
+        $list = M('content')->where('uid='.$uid.' AND docid='.$docid.' AND content=""')->select();
+        if($list){
+            foreach($list as $k => $v){
+                $list[$k]['reply_addtime'] = date("Y-m-d H:i:s",$v['reply_addtime']);
+            }
+        }
+        echo json_encode(array('status'=>1,'list'=>$list));
+        exit();
+    }
+
+    //获取患者用药管理列表
+    public function getMedicineList(){
+        $uid = intval($_REQUEST['id']);
+        if(!$uid){
+            echo json_encode(array('status'=>0,'err'=>'网络异常！'));
+            exit();
+        }
+        $list = M('medicine')->where('uid='.$uid)->select();
+        if(!$list){
+            echo json_encode(array('status'=>0,'err'=>'暂无用药管理！'));
+            exit(); 
+        }
+        $photo = array();
+        foreach($list as $k => $v){
+            $photo[$k] = '';
+            if($v['photo']){
+                $photo[$k] = explode(',',trim($v['photo'],','));
+                foreach($photo[$k] as $k2 => $v2){
+                    $photo[$k][$k2] = __DATAURL__.$v2;
+                }
+            }  
+        }
+        echo json_encode(array('status'=>1,'list'=>$list,'photo'=>$photo));
+        exit();
     }
 
 }
