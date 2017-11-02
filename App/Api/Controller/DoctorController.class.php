@@ -440,6 +440,25 @@ class DoctorController extends PublicController {
         }
     }
 
+     //更新数据库
+    public function saveScan(){
+        $uid = intval($_REQUEST['uid']);
+        if(!$uid){
+            echo json_encode(array('status'=>0,'err'=>'网络异常！'));
+            exit();
+        }
+        $erweima = $_REQUEST['erweima'];
+        $data['erweima'] = $erweima;
+        $res = M('doctor')->where('uid='.$uid)->save($data);
+        if($res){
+            echo json_encode(array('status'=>1,'err'=>'修改成功！'));
+            exit();
+        }else{
+            echo json_encode(array('status'=>0,'err'=>'修改失败！'));
+            exit();
+        }
+    }
+
     /*
     *
     * 图片上传的公共方法
@@ -750,6 +769,53 @@ class DoctorController extends PublicController {
             }  
         }
         echo json_encode(array('status'=>1,'list'=>$list,'photo'=>$photo));
+        exit();
+    }
+
+    //患者检验报告列表
+    public function report_list(){
+        $uid = intval($_REQUEST['id']);
+        if(!$uid){
+            echo json_encode(array('status'=>0,'err'=>'网络异常！'));
+            exit();
+        }
+        $list = M('report')->where('uid='.$uid)->select();
+        if(!$list){
+            echo json_encode(array('status'=>0,'err'=>'暂无检验报告！'));
+            exit(); 
+        }
+        echo json_encode(array('status'=>1,'list'=>$list));
+        exit();
+    }
+
+    //患者检验报告详情
+    public function report_detail(){
+        $rid = intval($_REQUEST['rid']);
+        if(!$rid){
+            echo json_encode(array('status'=>0,'err'=>'数据异常！'));
+            exit();
+        }
+        $info = M('report')->where('id='.$rid)->find();
+        echo json_encode(array('status'=>1,'info'=>$info));
+        exit();
+    }
+
+    //获取医生收入
+    public function getInput(){
+        $uid = intval($_REQUEST['uid']);
+        if(!$uid){
+            echo json_encode(array('status'=>0,'err'=>'网络异常！'));
+            exit();
+        }
+        $docid = intval(M('doctor')->where('uid='.$uid)->getField('id'));
+        $list = M('order')->where('docid='.$docid)->select();
+        if($list){
+            foreach($list as $k => $v){
+                $list[$k]['addtime'] = date("Y-m-d",$v['addtime']);
+                $list[$k]['username'] = M('user')->where('id='.intval($v['uid']))->getField('uname');
+            }
+        }
+        echo json_encode(array('status'=>1,'list'=>$list));
         exit();
     }
 

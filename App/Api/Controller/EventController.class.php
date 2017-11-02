@@ -13,6 +13,12 @@ class EventController extends PublicController {
             exit();
         }
         $list = M('event')->where('uid='.$uid)->select();
+        if($list){
+            foreach($list as $k => $v){
+                $list[$k]['name'] = M('event_type')->where('id='.intval($v['type_id']))->getField('name');
+                $list[$k]['dur_time'] = date("Y-m-d",strtotime($v['start_time']) + ($v['dur_time'] * 24 * 60 * 60));
+            }
+        }
         echo json_encode(array('status'=>1,'list'=>$list));
         exit();
     }
